@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Connect_iOSBridgeTest' target in the 'Connect_iOSBridgeTest' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif

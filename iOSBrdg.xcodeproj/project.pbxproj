@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		24C656F413EFAA4C00B9C6CB /* copyright in Resources */ = {isa = PBXBuildFile; fileRef = 24C656D813EFAA4C00B9C6CB /* copyright */; };
+		24C656F513EFAA4C00B9C6CB /* NetworkReturnAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656D913EFAA4C00B9C6CB /* NetworkReturnAddress.c */; };
+		24C656F613EFAA4C00B9C6CB /* OSC-address-space.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656DC13EFAA4C00B9C6CB /* OSC-address-space.c */; };
+		24C656F713EFAA4C00B9C6CB /* OSC-callbacklist.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656DE13EFAA4C00B9C6CB /* OSC-callbacklist.c */; };
+		24C656F813EFAA4C00B9C6CB /* OSC-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656E013EFAA4C00B9C6CB /* OSC-client.c */; };
+		24C656F913EFAA4C00B9C6CB /* OSC-drop.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656E413EFAA4C00B9C6CB /* OSC-drop.c */; };
+		24C656FA13EFAA4C00B9C6CB /* OSC-pattern-match.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656E713EFAA4C00B9C6CB /* OSC-pattern-match.c */; };
+		24C656FB13EFAA4C00B9C6CB /* OSC-priority-queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656E913EFAA4C00B9C6CB /* OSC-priority-queue.c */; };
+		24C656FC13EFAA4C00B9C6CB /* OSC-receive.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656EB13EFAA4C00B9C6CB /* OSC-receive.c */; };
+		24C656FD13EFAA4C00B9C6CB /* OSC-string-help.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656ED13EFAA4C00B9C6CB /* OSC-string-help.c */; };
+		24C656FE13EFAA4C00B9C6CB /* OSC-system-dependent.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656EF13EFAA4C00B9C6CB /* OSC-system-dependent.c */; };
+		24C656FF13EFAA4C00B9C6CB /* OSC-timetag.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656F013EFAA4C00B9C6CB /* OSC-timetag.c */; };
+		24C6570013EFAA4C00B9C6CB /* README in Resources */ = {isa = PBXBuildFile; fileRef = 24C656F213EFAA4C00B9C6CB /* README */; };
+		24C6570113EFAA4C00B9C6CB /* tags in Resources */ = {isa = PBXBuildFile; fileRef = 24C656F313EFAA4C00B9C6CB /* tags */; };
+		24C6570413EFAA5F00B9C6CB /* OSCPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C6570313EFAA5F00B9C6CB /* OSCPort.m */; };
+		24D7664B141E765F006389EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D7664A141E765F006389EC /* CoreLocation.framework */; };
+		24D76663141E7C9A006389EC /* symbol_p06.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D76662141E7C9A006389EC /* symbol_p06.png */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* Connect_iOSBridgeTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* Connect_iOSBridgeTestViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		2AA38E5D14E8B30C009A6396 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AA38E5C14E8B30C009A6396 /* Settings.bundle */; };
+		E31D94691673375400F64609 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D94681673375400F64609 /* Default.png */; };
+		E31D946B1673375B00F64609 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D946A1673375B00F64609 /* Default@2x.png */; };
+		E31D946D1673375F00F64609 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D946C1673375F00F64609 /* Default-568h@2x.png */; };
+		E31D946F1673376700F64609 /* iPhone_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D946E1673376700F64609 /* iPhone_Icon_121208.png */; };
+		E31D94711673376C00F64609 /* iPhoneRetina_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D94701673376C00F64609 /* iPhoneRetina_Icon_121208.png */; };
+		E3771C2E158EBE9100449E0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3771C2D158EBE9100449E0A /* AVFoundation.framework */; };
+		E3771C2F158EBED200449E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		E3998C76158B1D87005CB8C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */; };
+		E3B459A8158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */; };
+		E3B459A9158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */; };
+		E3B459AC158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A7158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png */; };
+		E3C34B22158ED80200B1B4D8 /* vision.edge-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C34B21158ED80200B1B4D8 /* vision.edge-Info.plist */; };
+		E3EF134E158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connect_iOSBridgeTestAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connect_iOSBridgeTestAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* iOSBrdg.vision.edge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBrdg.vision.edge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		24C656D813EFAA4C00B9C6CB /* copyright */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright; sourceTree = "<group>"; };
+		24C656D913EFAA4C00B9C6CB /* NetworkReturnAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NetworkReturnAddress.c; sourceTree = "<group>"; };
+		24C656DA13EFAA4C00B9C6CB /* NetworkReturnAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkReturnAddress.h; sourceTree = "<group>"; };
+		24C656DB13EFAA4C00B9C6CB /* NetworkUDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUDP.h; sourceTree = "<group>"; };
+		24C656DC13EFAA4C00B9C6CB /* OSC-address-space.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-address-space.c"; sourceTree = "<group>"; };
+		24C656DD13EFAA4C00B9C6CB /* OSC-address-space.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-address-space.h"; sourceTree = "<group>"; };
+		24C656DE13EFAA4C00B9C6CB /* OSC-callbacklist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-callbacklist.c"; sourceTree = "<group>"; };
+		24C656DF13EFAA4C00B9C6CB /* OSC-callbacklist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-callbacklist.h"; sourceTree = "<group>"; };
+		24C656E013EFAA4C00B9C6CB /* OSC-client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-client.c"; sourceTree = "<group>"; };
+		24C656E113EFAA4C00B9C6CB /* OSC-client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-client.h"; sourceTree = "<group>"; };
+		24C656E213EFAA4C00B9C6CB /* OSC-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-common.h"; sourceTree = "<group>"; };
+		24C656E313EFAA4C00B9C6CB /* OSC-dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-dispatch.h"; sourceTree = "<group>"; };
+		24C656E413EFAA4C00B9C6CB /* OSC-drop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-drop.c"; sourceTree = "<group>"; };
+		24C656E513EFAA4C00B9C6CB /* OSC-drop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-drop.h"; sourceTree = "<group>"; };
+		24C656E613EFAA4C00B9C6CB /* OSC-internal-messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-internal-messages.h"; sourceTree = "<group>"; };
+		24C656E713EFAA4C00B9C6CB /* OSC-pattern-match.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-pattern-match.c"; sourceTree = "<group>"; };
+		24C656E813EFAA4C00B9C6CB /* OSC-pattern-match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-pattern-match.h"; sourceTree = "<group>"; };
+		24C656E913EFAA4C00B9C6CB /* OSC-priority-queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-priority-queue.c"; sourceTree = "<group>"; };
+		24C656EA13EFAA4C00B9C6CB /* OSC-priority-queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-priority-queue.h"; sourceTree = "<group>"; };
+		24C656EB13EFAA4C00B9C6CB /* OSC-receive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-receive.c"; sourceTree = "<group>"; };
+		24C656EC13EFAA4C00B9C6CB /* OSC-receive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-receive.h"; sourceTree = "<group>"; };
+		24C656ED13EFAA4C00B9C6CB /* OSC-string-help.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-string-help.c"; sourceTree = "<group>"; };
+		24C656EE13EFAA4C00B9C6CB /* OSC-string-help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-string-help.h"; sourceTree = "<group>"; };
+		24C656EF13EFAA4C00B9C6CB /* OSC-system-dependent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-system-dependent.c"; sourceTree = "<group>"; };
+		24C656F013EFAA4C00B9C6CB /* OSC-timetag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "OSC-timetag.c"; sourceTree = "<group>"; };
+		24C656F113EFAA4C00B9C6CB /* OSC-timetag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-timetag.h"; sourceTree = "<group>"; };
+		24C656F213EFAA4C00B9C6CB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		24C656F313EFAA4C00B9C6CB /* tags */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tags; sourceTree = "<group>"; };
+		24C6570213EFAA5400B9C6CB /* OSCPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCPort.h; sourceTree = "<group>"; };
+		24C6570313EFAA5F00B9C6CB /* OSCPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCPort.m; sourceTree = "<group>"; };
+		24D7664A141E765F006389EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		24D76662141E7C9A006389EC /* symbol_p06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol_p06.png; sourceTree = "<group>"; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* Connect_iOSBridgeTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Connect_iOSBridgeTestViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* Connect_iOSBridgeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connect_iOSBridgeTestViewController.h; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AA38E5C14E8B30C009A6396 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* vision.edge_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vision.edge_Prefix.pch; sourceTree = "<group>"; };
+		E31D94681673375400F64609 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E31D946A1673375B00F64609 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E31D946C1673375F00F64609 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E31D946E1673376700F64609 /* iPhone_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Icon_121208.png; sourceTree = "<group>"; };
+		E31D94701673376C00F64609 /* iPhoneRetina_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneRetina_Icon_121208.png; sourceTree = "<group>"; };
+		E3771C2D158EBE9100449E0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Icon_icon_iosbrdg_led.png; sourceTree = "<group>"; };
+		E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadRetina_Icon_icon_iosbrdg_led.png; sourceTree = "<group>"; };
+		E3B459A7158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork_Icon_icon_iosbrdg_led.png; sourceTree = "<group>"; };
+		E3C34B21158ED80200B1B4D8 /* vision.edge-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "vision.edge-Info.plist"; sourceTree = "<group>"; };
+		E3EF134F158ED47C0005D52E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/Connect_iOSBridgeTestViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3771C2F158EBED200449E0A /* Foundation.framework in Frameworks */,
+				E3771C2E158EBE9100449E0A /* AVFoundation.framework in Frameworks */,
+				E3998C76158B1D87005CB8C1 /* AudioToolbox.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				24D7664B141E765F006389EC /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24C6570213EFAA5400B9C6CB /* OSCPort.h */,
+				24C6570313EFAA5F00B9C6CB /* OSCPort.m */,
+				24C656D713EFAA4C00B9C6CB /* OSC-Kit-Mac */,
+				1D3623240D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.h */,
+				1D3623250D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* Connect_iOSBridgeTestViewController.h */,
+				E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* iOSBrdg.vision.edge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24C656D713EFAA4C00B9C6CB /* OSC-Kit-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				24C656D813EFAA4C00B9C6CB /* copyright */,
+				24C656D913EFAA4C00B9C6CB /* NetworkReturnAddress.c */,
+				24C656DA13EFAA4C00B9C6CB /* NetworkReturnAddress.h */,
+				24C656DB13EFAA4C00B9C6CB /* NetworkUDP.h */,
+				24C656DC13EFAA4C00B9C6CB /* OSC-address-space.c */,
+				24C656DD13EFAA4C00B9C6CB /* OSC-address-space.h */,
+				24C656DE13EFAA4C00B9C6CB /* OSC-callbacklist.c */,
+				24C656DF13EFAA4C00B9C6CB /* OSC-callbacklist.h */,
+				24C656E013EFAA4C00B9C6CB /* OSC-client.c */,
+				24C656E113EFAA4C00B9C6CB /* OSC-client.h */,
+				24C656E213EFAA4C00B9C6CB /* OSC-common.h */,
+				24C656E313EFAA4C00B9C6CB /* OSC-dispatch.h */,
+				24C656E413EFAA4C00B9C6CB /* OSC-drop.c */,
+				24C656E513EFAA4C00B9C6CB /* OSC-drop.h */,
+				24C656E613EFAA4C00B9C6CB /* OSC-internal-messages.h */,
+				24C656E713EFAA4C00B9C6CB /* OSC-pattern-match.c */,
+				24C656E813EFAA4C00B9C6CB /* OSC-pattern-match.h */,
+				24C656E913EFAA4C00B9C6CB /* OSC-priority-queue.c */,
+				24C656EA13EFAA4C00B9C6CB /* OSC-priority-queue.h */,
+				24C656EB13EFAA4C00B9C6CB /* OSC-receive.c */,
+				24C656EC13EFAA4C00B9C6CB /* OSC-receive.h */,
+				24C656ED13EFAA4C00B9C6CB /* OSC-string-help.c */,
+				24C656EE13EFAA4C00B9C6CB /* OSC-string-help.h */,
+				24C656EF13EFAA4C00B9C6CB /* OSC-system-dependent.c */,
+				24C656F013EFAA4C00B9C6CB /* OSC-timetag.c */,
+				24C656F113EFAA4C00B9C6CB /* OSC-timetag.h */,
+				24C656F213EFAA4C00B9C6CB /* README */,
+				24C656F313EFAA4C00B9C6CB /* tags */,
+			);
+			path = "OSC-Kit-Mac";
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* vision.edge_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E31D94701673376C00F64609 /* iPhoneRetina_Icon_121208.png */,
+				E31D946E1673376700F64609 /* iPhone_Icon_121208.png */,
+				E31D946C1673375F00F64609 /* Default-568h@2x.png */,
+				E31D946A1673375B00F64609 /* Default@2x.png */,
+				E31D94681673375400F64609 /* Default.png */,
+				E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */,
+				E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */,
+				E3B459A7158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png */,
+				E3C34B21158ED80200B1B4D8 /* vision.edge-Info.plist */,
+				24D76662141E7C9A006389EC /* symbol_p06.png */,
+				2899E5210DE3E06400AC0155 /* Connect_iOSBridgeTestViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				2AA38E5C14E8B30C009A6396 /* Settings.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */,
+				E3771C2D158EBE9100449E0A /* AVFoundation.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				24D7664A141E765F006389EC /* CoreLocation.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* iOSBrdg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iOSBrdg" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				E31D947216733A8D00F64609 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSBrdg;
+			productName = Connect_iOSBridgeTest;
+			productReference = 1D6058910D05DD3D006BFB54 /* iOSBrdg.vision.edge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOSBrdg" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				ja,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* iOSBrdg */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* Connect_iOSBridgeTestViewController.xib in Resources */,
+				24C656F413EFAA4C00B9C6CB /* copyright in Resources */,
+				24C6570013EFAA4C00B9C6CB /* README in Resources */,
+				24C6570113EFAA4C00B9C6CB /* tags in Resources */,
+				24D76663141E7C9A006389EC /* symbol_p06.png in Resources */,
+				2AA38E5D14E8B30C009A6396 /* Settings.bundle in Resources */,
+				E3C34B22158ED80200B1B4D8 /* vision.edge-Info.plist in Resources */,
+				E3B459A8158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png in Resources */,
+				E3B459A9158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png in Resources */,
+				E3B459AC158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png in Resources */,
+				E31D94691673375400F64609 /* Default.png in Resources */,
+				E31D946B1673375B00F64609 /* Default@2x.png in Resources */,
+				E31D946D1673375F00F64609 /* Default-568h@2x.png in Resources */,
+				E31D946F1673376700F64609 /* iPhone_Icon_121208.png in Resources */,
+				E31D94711673376C00F64609 /* iPhoneRetina_Icon_121208.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E31D947216733A8D00F64609 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Settings.bundleの設定ファイルのそれぞれの初期値に設定するためのスクリプト\nappVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$INFOPLIST_FILE\")\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue $appVersion\" ./Settings.bundle/Root.plist\nbuildVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:2:DefaultValue $buildVersion\" ./Settings.bundle/Root.plist";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.m in Sources */,
+				E3EF134E158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m in Sources */,
+				24C656F513EFAA4C00B9C6CB /* NetworkReturnAddress.c in Sources */,
+				24C656F613EFAA4C00B9C6CB /* OSC-address-space.c in Sources */,
+				24C656F713EFAA4C00B9C6CB /* OSC-callbacklist.c in Sources */,
+				24C656F813EFAA4C00B9C6CB /* OSC-client.c in Sources */,
+				24C656F913EFAA4C00B9C6CB /* OSC-drop.c in Sources */,
+				24C656FA13EFAA4C00B9C6CB /* OSC-pattern-match.c in Sources */,
+				24C656FB13EFAA4C00B9C6CB /* OSC-priority-queue.c in Sources */,
+				24C656FC13EFAA4C00B9C6CB /* OSC-receive.c in Sources */,
+				24C656FD13EFAA4C00B9C6CB /* OSC-string-help.c in Sources */,
+				24C656FE13EFAA4C00B9C6CB /* OSC-system-dependent.c in Sources */,
+				24C656FF13EFAA4C00B9C6CB /* OSC-timetag.c in Sources */,
+				24C6570413EFAA5F00B9C6CB /* OSCPort.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3EF134F158ED47C0005D52E /* en */,
+			);
+			name = Connect_iOSBridgeTestViewController.m;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 健亮 西村 (84BUPG3SPQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = vision.edge_Prefix.pch;
+				INFOPLIST_FILE = "vision.edge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = iOSBrdg.vision.edge;
+				PROVISIONING_PROFILE = "D19F8F1C-BC5A-49D9-9E97-B170A412D26A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 健亮 西村 (84BUPG3SPQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = vision.edge_Prefix.pch;
+				INFOPLIST_FILE = "vision.edge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = iOSBrdg.vision.edge;
+				PROVISIONING_PROFILE = "D19F8F1C-BC5A-49D9-9E97-B170A412D26A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: shun endo (ENG667R9K3)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9C9E71C9-DCC4-478D-9F3C-41947AA91411";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iOSBrdg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOSBrdg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
