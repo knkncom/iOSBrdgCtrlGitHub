@@ -2,8 +2,8 @@
 //  Connect_iOSBridgeTestViewController.m
 //  Connect_iOSBridgeTest
 //
-//  Created by Shun Endo on 11/08/08.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Shun Endo, Kensuke Nishimura.
+//  Copyright 2011 University of Aizu Computer Art Lab. All rights reserved.
 //
 
 
@@ -27,47 +27,6 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     toggleSound = [defaults boolForKey: @"toggle_sound"];
     toggleVibration = [defaults boolForKey: @"toggle_vibration"];
-}
-
-
-//////////////////////////////////////////////////////////////////////
-//                                                                  //
-//   カメラのフラッシュをONにする                                   //
-//                                                                  //
-//////////////////////////////////////////////////////////////////////
-
--(void)flashON
-{
-    AVCaptureDevice *flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    if([flashLight isTorchAvailable] && [flashLight isTorchModeSupported:AVCaptureTorchModeOn])
-    {
-        BOOL success = [flashLight lockForConfiguration:nil];
-        if(success)
-        {
-            [flashLight setTorchMode:AVCaptureTorchModeOn];
-            [flashLight unlockForConfiguration];
-        }
-    }
-}
-
-//////////////////////////////////////////////////////////////////////
-//                                                                  //
-//   カメラのフラッシュをOFFにする                                  //
-//                                                                  //
-//////////////////////////////////////////////////////////////////////
-
--(void)flashOFF
-{
-    AVCaptureDevice *flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    if([flashLight isTorchAvailable] && [flashLight isTorchModeSupported:AVCaptureTorchModeOn])
-    {
-        BOOL success = [flashLight lockForConfiguration:nil];
-        if(success)
-        {
-            [flashLight setTorchMode:AVCaptureTorchModeOff];
-            [flashLight unlockForConfiguration];
-        }
-    }
 }
 
 //Initialization of variables(flag, count, label name, timer method, and so on)
@@ -132,18 +91,13 @@
 }
 
 
-//////////////////////////////////////////////////////////////////////
-//                                                                  //
-//   ホストIPの更新・再接続                                         //
-//                                                                  //
-//////////////////////////////////////////////////////////////////////
-
+// Update Host IP and Re-connect
 -(void)Host_Input {
-    if([Host_TextField.text length] != 0) { // IPアドレスが空欄の場合は何もしない
+    if([Host_TextField.text length] != 0) { // Do nothing if host IP is empty
         host = Host_TextField.text;
         port_hostLabel.text = [NSString stringWithFormat:@"%@",host];
         testip = [host UTF8String];
-        //OSC送信ポートの初期化
+        // Init OSC sending port
         port = [[OSCPort oscPortToAddress:testip portNumber:sport] retain];
         
         NSUserDefaults *Default_Host = [NSUserDefaults standardUserDefaults];
@@ -169,19 +123,17 @@
         New_yaw = yaw;
         
         
-        // サウンド バイブレーション カメラフラッシュ
-        if((int)yaw % 360 < 180)
-        {
-            if(!triggered)
-            {
-                // LEDライト
+        // Sound, Vibration, Camera flash
+        if((int)yaw % 360 < 180) {
+            if (!triggered) {
+                // Camera LED flash
                 if(toggleLED)
                     [self flashON];
                 [self flashOFF];
-                // サウンド
+                // Sound
                 if(toggleSound)
                     AudioServicesPlaySystemSound(1013);
-                // バイブレーション
+                // Vibration
                 if(toggleVibration)
                     AudioServicesPlaySystemSound(1011);
                 triggered = YES;
@@ -484,6 +436,37 @@
         Timer_V = 0;
     }
 }
+
+// Camera flash ON Function
+-(void)flashON
+{
+    AVCaptureDevice *flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if([flashLight isTorchAvailable] && [flashLight isTorchModeSupported:AVCaptureTorchModeOn])
+    {
+        BOOL success = [flashLight lockForConfiguration:nil];
+        if(success)
+        {
+            [flashLight setTorchMode:AVCaptureTorchModeOn];
+            [flashLight unlockForConfiguration];
+        }
+    }
+}
+
+// Camera flash OFF Function
+-(void)flashOFF
+{
+    AVCaptureDevice *flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if([flashLight isTorchAvailable] && [flashLight isTorchModeSupported:AVCaptureTorchModeOn])
+    {
+        BOOL success = [flashLight lockForConfiguration:nil];
+        if(success)
+        {
+            [flashLight setTorchMode:AVCaptureTorchModeOff];
+            [flashLight unlockForConfiguration];
+        }
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

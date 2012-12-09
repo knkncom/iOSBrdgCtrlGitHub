@@ -2,8 +2,8 @@
 //  Connect_iOSBridgeTestViewController.h
 //  Connect_iOSBridgeTest
 //
-//  Created by Shun Endo on 11/08/08.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Shun Endo, Kensuke Nishimura.
+//  Copyright 2011 University of Aizu Computer Art Lab. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
