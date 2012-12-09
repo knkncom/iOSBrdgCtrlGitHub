@@ -192,6 +192,7 @@
 						<string key="NSFrame">{{250, 403}, {50, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -570,14 +571,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">Rock_btn_Title</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="566910923"/>
-					</object>
-					<int key="connectionID">118</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">Mode_btn_Title</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="100751945"/>
@@ -631,6 +624,14 @@
 						<reference key="destination" ref="960963864"/>
 					</object>
 					<int key="connectionID">152</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">Lock_btn_Title</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="566910923"/>
+					</object>
+					<int key="connectionID">157</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -697,12 +698,12 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">Rock_btn</string>
+						<string key="label">Lock_btn</string>
 						<reference key="source" ref="566910923"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">111</int>
+					<int key="connectionID">156</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -974,7 +975,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">152</int>
+			<int key="maxID">157</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -989,11 +990,11 @@
 							<string>Channel_Set_btn</string>
 							<string>Circumferential_Azimuthal_btn</string>
 							<string>Host_Input</string>
+							<string>Lock_btn</string>
 							<string>Minus_btn</string>
 							<string>Mode_btn</string>
 							<string>Plus_btn</string>
 							<string>Positive_Negative_btn</string>
-							<string>Rock_btn</string>
 							<string>Run_switch</string>
 							<string>Threshold_Slider_Change</string>
 							<string>Transmission_Slider_Change</string>
@@ -1026,11 +1027,11 @@
 							<string>Channel_Set_btn</string>
 							<string>Circumferential_Azimuthal_btn</string>
 							<string>Host_Input</string>
+							<string>Lock_btn</string>
 							<string>Minus_btn</string>
 							<string>Mode_btn</string>
 							<string>Plus_btn</string>
 							<string>Positive_Negative_btn</string>
-							<string>Rock_btn</string>
 							<string>Run_switch</string>
 							<string>Threshold_Slider_Change</string>
 							<string>Transmission_Slider_Change</string>
@@ -1053,6 +1054,10 @@
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
+								<string key="name">Lock_btn</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
 								<string key="name">Minus_btn</string>
 								<string key="candidateClassName">id</string>
 							</object>
@@ -1066,10 +1071,6 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">Positive_Negative_btn</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">Rock_btn</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
@@ -1106,9 +1107,9 @@
 							<string>Circumferential_Azimuthal_btn_Title</string>
 							<string>Correction_Label</string>
 							<string>Host_TextField</string>
+							<string>Lock_btn_Title</string>
 							<string>Mode_btn_Title</string>
 							<string>Positive_Negative_btn_Title</string>
-							<string>Rock_btn_Title</string>
 							<string>Run_switch</string>
 							<string>Threshold_Label</string>
 							<string>Threshold_Slider</string>
@@ -1147,9 +1148,9 @@
 							<string>Circumferential_Azimuthal_btn_Title</string>
 							<string>Correction_Label</string>
 							<string>Host_TextField</string>
+							<string>Lock_btn_Title</string>
 							<string>Mode_btn_Title</string>
 							<string>Positive_Negative_btn_Title</string>
-							<string>Rock_btn_Title</string>
 							<string>Run_switch</string>
 							<string>Threshold_Label</string>
 							<string>Threshold_Slider</string>
@@ -1179,15 +1180,15 @@
 								<string key="candidateClassName">UITextField</string>
 							</object>
 							<object class="IBToOneOutletInfo">
+								<string key="name">Lock_btn_Title</string>
+								<string key="candidateClassName">UIButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
 								<string key="name">Mode_btn_Title</string>
 								<string key="candidateClassName">UIButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">Positive_Negative_btn_Title</string>
-								<string key="candidateClassName">UIButton</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">Rock_btn_Title</string>
 								<string key="candidateClassName">UIButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">

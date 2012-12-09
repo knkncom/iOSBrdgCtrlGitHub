@@ -66,7 +66,7 @@
     IBOutlet UITextField *Host_TextField;
     
     IBOutlet UIButton *Channel_Set_btn_Title;
-    IBOutlet UIButton *Rock_btn_Title;
+    IBOutlet UIButton *Lock_btn_Title;
     IBOutlet UIButton *Mode_btn_Title;
     
     IBOutlet UIButton *Wrapped_Unwrapped_btn_Title;
@@ -108,7 +108,7 @@
 -(IBAction)Threshold_Slider_Change;
 -(IBAction)Transmission_Slider_Change;
 
--(IBAction)Rock_btn;
+-(IBAction)Lock_btn;
 
 -(void)Spin_Timer:(NSTimer *)timer;
 

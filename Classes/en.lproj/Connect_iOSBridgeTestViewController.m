@@ -330,7 +330,18 @@
 	[ValueSheet release];
 }
 
-
+//Display lock flag setting
+-(IBAction)Lock_btn {
+    UIActionSheet *ValueSheet = [[UIActionSheet alloc]
+								 initWithTitle:@"Lock Setting"
+								 delegate:self
+								 cancelButtonTitle:@"Cancel"
+								 destructiveButtonTitle:@"Lock"
+								 otherButtonTitles:nil];
+	ValueSheet.tag = 7;
+	[ValueSheet showInView:self.view];
+	[ValueSheet release];
+}
 
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     switch (actionSheet.tag) {
@@ -414,6 +425,15 @@
                     break;
             }
             break;
+        case 7: // Lock Setting
+            switch (buttonIndex) {
+                case 0:
+                    [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+                    Timer_Flag = 1;
+                    break;
+                default:
+                    break;
+            }
         default:
             break;
     }
@@ -445,11 +465,6 @@
 	Correction_Label.text = [NSString stringWithFormat:@"%d", Value_correction];
 }
 
-//Display lock flag setting
--(IBAction)Lock_btn{
-    [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
-    Timer_Flag = 1;
-}
 
 //Timer function
 -(void)Spin_Timer:(NSTimer *)timer{
