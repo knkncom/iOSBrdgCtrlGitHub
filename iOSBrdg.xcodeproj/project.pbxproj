@@ -42,7 +42,6 @@
 		E3B459A8158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */; };
 		E3B459A9158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */; };
 		E3B459AC158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A7158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png */; };
-		E3C34B22158ED80200B1B4D8 /* vision.edge-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3C34B21158ED80200B1B4D8 /* vision.edge-Info.plist */; };
 		E3EF134E158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -260,7 +259,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOSBrdg" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -294,7 +293,6 @@
 				24C6570113EFAA4C00B9C6CB /* tags in Resources */,
 				24D76663141E7C9A006389EC /* symbol_p06.png in Resources */,
 				2AA38E5D14E8B30C009A6396 /* Settings.bundle in Resources */,
-				E3C34B22158ED80200B1B4D8 /* vision.edge-Info.plist in Resources */,
 				E3B459A8158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png in Resources */,
 				E3B459A9158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png in Resources */,
 				E3B459AC158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png in Resources */,
