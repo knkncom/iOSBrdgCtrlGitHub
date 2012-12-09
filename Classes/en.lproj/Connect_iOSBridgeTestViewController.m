@@ -27,6 +27,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     toggleSound = [defaults boolForKey: @"toggle_sound"];
     toggleVibration = [defaults boolForKey: @"toggle_vibration"];
+    host = [defaults stringForKey: @"host_text"];
 }
 
 //Initialization of variables(flag, count, label name, timer method, and so on)
@@ -42,7 +43,7 @@
     
     NSUserDefaults *Default_Host = [NSUserDefaults standardUserDefaults];
     host = [Default_Host stringForKey:@"HOST"];
-    Host_TextField.text = host;
+//    Host_TextField.text = host;
     
     
 	Continuous_Flag = 0;
@@ -93,9 +94,10 @@
 
 // Update Host IP and Re-connect
 -(void)Host_Input {
-    if([Host_TextField.text length] != 0) { // Do nothing if host IP is empty
-        host = Host_TextField.text;
-        port_hostLabel.text = [NSString stringWithFormat:@"%@",host];
+//    NSLog(Host_TextField.text);
+    if([host length] != 0) { // Do nothing if host IP is empty
+  //      host = Host_TextField.text;
+        port_hostLabel.text = [NSString stringWithFormat:@"Host: %@",host];
         testip = [host UTF8String];
         // Init OSC sending port
         port = [[OSCPort oscPortToAddress:testip portNumber:sport] retain];
@@ -103,6 +105,8 @@
         NSUserDefaults *Default_Host = [NSUserDefaults standardUserDefaults];
         [Default_Host setObject:Host_TextField.text forKey:@"HOST"];
         [Default_Host synchronize];
+    } else {
+        port_hostLabel.text = [NSString stringWithFormat:@"Host: None"];
     }
 }
 

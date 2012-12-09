@@ -22,6 +22,22 @@
 		</dict>
 		<dict>
 			<key>Title</key>
+			<string>Host IP</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>Key</key>
+			<string>host_text</string>
+			<key>KeyboardType</key>
+			<string>NumbersAndPunctuation</string>
+			<key>Title</key>
+			<string></string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+		</dict>
+		<dict>
+			<key>Title</key>
 			<string>Option</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>

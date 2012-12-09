@@ -64,7 +64,7 @@
     int Reverse_state;
     
     IBOutlet UITextField *Host_TextField;
-    
+
     IBOutlet UIButton *Channel_Set_btn_Title;
     IBOutlet UIButton *Lock_btn_Title;
     IBOutlet UIButton *Mode_btn_Title;
