@@ -6,27 +6,17 @@
 	<array>
 		<dict>
 			<key>Title</key>
-			<string>Version</string>
+			<string>Info</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<string>1.0</string>
+			<string>1.02</string>
 			<key>Key</key>
 			<string>appVersion</string>
 			<key>Title</key>
 			<string>バージョン</string>
-			<key>Type</key>
-			<string>PSTitleValueSpecifier</string>
-		</dict>
-		<dict>
-			<key>DefaultValue</key>
-			<string>1.0.2</string>
-			<key>Key</key>
-			<string>buildVersion</string>
-			<key>Title</key>
-			<string>ビルド</string>
 			<key>Type</key>
 			<string>PSTitleValueSpecifier</string>
 		</dict>
