@@ -5,12 +5,10 @@
 	<key>PreferenceSpecifiers</key>
 	<array>
 		<dict>
-			<key>Key</key>
-			<string></string>
 			<key>Title</key>
-			<string></string>
+			<string>Version</string>
 			<key>Type</key>
-			<string>PSTitleValueSpecifier</string>
+			<string>PSGroupSpecifier</string>
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
@@ -33,12 +31,18 @@
 			<string>PSTitleValueSpecifier</string>
 		</dict>
 		<dict>
+			<key>Title</key>
+			<string>Option</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
 			<key>DefaultValue</key>
 			<false/>
 			<key>Key</key>
 			<string>toggle_led</string>
 			<key>Title</key>
-			<string>LEDライト</string>
+			<string>LED Light</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
@@ -48,7 +52,7 @@
 			<key>Key</key>
 			<string>toggle_sound</string>
 			<key>Title</key>
-			<string>サウンド</string>
+			<string>Sound Effect</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
@@ -58,7 +62,7 @@
 			<key>Key</key>
 			<string>toggle_vibration</string>
 			<key>Title</key>
-			<string>バイブレーション</string>
+			<string>Vibration</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
