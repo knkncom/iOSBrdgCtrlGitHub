@@ -34,15 +34,14 @@
 		E31D94691673375400F64609 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D94681673375400F64609 /* Default.png */; };
 		E31D946B1673375B00F64609 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D946A1673375B00F64609 /* Default@2x.png */; };
 		E31D946D1673375F00F64609 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D946C1673375F00F64609 /* Default-568h@2x.png */; };
-		E31D946F1673376700F64609 /* iPhone_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D946E1673376700F64609 /* iPhone_Icon_121208.png */; };
-		E31D94711673376C00F64609 /* iPhoneRetina_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D94701673376C00F64609 /* iPhoneRetina_Icon_121208.png */; };
 		E3771C2E158EBE9100449E0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3771C2D158EBE9100449E0A /* AVFoundation.framework */; };
 		E3771C2F158EBED200449E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		E3998C76158B1D87005CB8C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */; };
 		E3B459A8158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */; };
 		E3B459A9158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */; };
-		E3B459AC158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A7158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png */; };
 		E3EF134E158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */; };
+		E3F2F32D167448D300DCB31C /* iPhoneRetina_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F2F32C167448D300DCB31C /* iPhoneRetina_Icon_121208.png */; };
+		E3F2F32F167448D600DCB31C /* iPhone_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F2F32E167448D600DCB31C /* iPhone_Icon_121208.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,15 +92,14 @@
 		E31D94681673375400F64609 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E31D946A1673375B00F64609 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E31D946C1673375F00F64609 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E31D946E1673376700F64609 /* iPhone_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Icon_121208.png; sourceTree = "<group>"; };
-		E31D94701673376C00F64609 /* iPhoneRetina_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneRetina_Icon_121208.png; sourceTree = "<group>"; };
 		E3771C2D158EBE9100449E0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Icon_icon_iosbrdg_led.png; sourceTree = "<group>"; };
 		E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadRetina_Icon_icon_iosbrdg_led.png; sourceTree = "<group>"; };
-		E3B459A7158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork_Icon_icon_iosbrdg_led.png; sourceTree = "<group>"; };
 		E3C34B21158ED80200B1B4D8 /* vision.edge-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "vision.edge-Info.plist"; sourceTree = "<group>"; };
 		E3EF134F158ED47C0005D52E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/Connect_iOSBridgeTestViewController.m; sourceTree = "<group>"; };
+		E3F2F32C167448D300DCB31C /* iPhoneRetina_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneRetina_Icon_121208.png; sourceTree = "<group>"; };
+		E3F2F32E167448D600DCB31C /* iPhone_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Icon_121208.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,14 +200,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E31D94701673376C00F64609 /* iPhoneRetina_Icon_121208.png */,
-				E31D946E1673376700F64609 /* iPhone_Icon_121208.png */,
+				E3F2F32E167448D600DCB31C /* iPhone_Icon_121208.png */,
+				E3F2F32C167448D300DCB31C /* iPhoneRetina_Icon_121208.png */,
 				E31D946C1673375F00F64609 /* Default-568h@2x.png */,
 				E31D946A1673375B00F64609 /* Default@2x.png */,
 				E31D94681673375400F64609 /* Default.png */,
 				E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */,
 				E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */,
-				E3B459A7158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png */,
 				E3C34B21158ED80200B1B4D8 /* vision.edge-Info.plist */,
 				24D76662141E7C9A006389EC /* symbol_p06.png */,
 				2899E5210DE3E06400AC0155 /* Connect_iOSBridgeTestViewController.xib */,
@@ -242,7 +239,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				E31D947216733A8D00F64609 /* ShellScript */,
+				E3F2F33616744D5D00DCB31C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -295,19 +292,18 @@
 				2AA38E5D14E8B30C009A6396 /* Settings.bundle in Resources */,
 				E3B459A8158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png in Resources */,
 				E3B459A9158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png in Resources */,
-				E3B459AC158F2AFC00ACC1B3 /* iTunesArtwork_Icon_icon_iosbrdg_led.png in Resources */,
 				E31D94691673375400F64609 /* Default.png in Resources */,
 				E31D946B1673375B00F64609 /* Default@2x.png in Resources */,
 				E31D946D1673375F00F64609 /* Default-568h@2x.png in Resources */,
-				E31D946F1673376700F64609 /* iPhone_Icon_121208.png in Resources */,
-				E31D94711673376C00F64609 /* iPhoneRetina_Icon_121208.png in Resources */,
+				E3F2F32D167448D300DCB31C /* iPhoneRetina_Icon_121208.png in Resources */,
+				E3F2F32F167448D600DCB31C /* iPhone_Icon_121208.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E31D947216733A8D00F64609 /* ShellScript */ = {
+		E3F2F33616744D5D00DCB31C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,7 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#Settings.bundleの設定ファイルのそれぞれの初期値に設定するためのスクリプト\nappVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$INFOPLIST_FILE\")\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue $appVersion\" ./Settings.bundle/Root.plist\nbuildVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:2:DefaultValue $buildVersion\" ./Settings.bundle/Root.plist";
+			shellScript = "#Settings.bundleの設定ファイルのそれぞれの初期値に設定するためのスクリプト\nappVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$INFOPLIST_FILE\")\nbuildVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue $appVersion$buildVersion\" ./Settings.bundle/Root.plist";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -371,10 +367,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = vision.edge_Prefix.pch;
 				INFOPLIST_FILE = "vision.edge-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = iOSBrdg.vision.edge;
 				PROVISIONING_PROFILE = "D19F8F1C-BC5A-49D9-9E97-B170A412D26A";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -388,10 +385,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = vision.edge_Prefix.pch;
 				INFOPLIST_FILE = "vision.edge-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = iOSBrdg.vision.edge;
 				PROVISIONING_PROFILE = "D19F8F1C-BC5A-49D9-9E97-B170A412D26A";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
