@@ -97,7 +97,7 @@
 //    NSLog(Host_TextField.text);
     if([host length] != 0) { // Do nothing if host IP is empty
   //      host = Host_TextField.text;
-        port_hostLabel.text = [NSString stringWithFormat:@"Host: %@",host];
+        port_hostLabel.text = [NSString stringWithFormat:@" Host: %@",host];
         testip = [host UTF8String];
         // Init OSC sending port
         port = [[OSCPort oscPortToAddress:testip portNumber:sport] retain];
@@ -106,12 +106,13 @@
         [Default_Host setObject:Host_TextField.text forKey:@"HOST"];
         [Default_Host synchronize];
     } else {
-        port_hostLabel.text = [NSString stringWithFormat:@"Host: None"];
+        port_hostLabel.text = [NSString stringWithFormat:@" Host: None"];
     }
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)heading{
 	if (Run_Flag == 1) {
+        [self Host_Input]; // ホストに再接続
         compassImg.transform = CGAffineTransformMakeRotation(((-heading.magneticHeading - Value_correction)* M_PI/180)*Reverse_state);
 		New_heading = (int)heading.magneticHeading;
         
@@ -188,7 +189,7 @@
 		yaw = 0;
 		x = 0;
 		y = 0;
-		latLabel.text = [NSString stringWithFormat:@" Yaw: %.0f X: %.0f Y: %.0f", yaw, x, y];
+//		latLabel.text = [NSString stringWithFormat:@" Yaw: %.0f X: %.0f Y: %.0f", yaw, x, y];
 	}
 }
 
@@ -207,6 +208,7 @@
         [self Host_Input]; // ホストに再接続
 	} else {
 		Run_Flag = 0;
+        latLabel.text = [NSString stringWithFormat:@" No Connection"];
 	}
 }
 //Channel name setting
@@ -219,7 +221,6 @@
 								   otherButtonTitles:@"CH0",@"CH1",@"CH2",@"CH3",@"CH4",@"CH5",nil];
 	ChannelSheet.tag = 1;
 	[ChannelSheet showInView:self.view];
-    [self Host_Input]; // チャンネルを変更したらホストに再接続する
 	[ChannelSheet release];
 }
 

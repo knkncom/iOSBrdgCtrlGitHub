@@ -73,7 +73,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText"> Yaw: 0 X: 0 Y: 0</string>
+						<string key="IBUIText"> No Connection</string>
 						<object class="NSColor" key="IBUITextColor" id="67190999">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -142,12 +142,11 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Host: None</string>
+						<string key="IBUIText"> Host: None</string>
 						<reference key="IBUITextColor" ref="67190999"/>
 						<reference key="IBUIHighlightedColor" ref="412844770"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
-						<int key="IBUITextAlignment">1</int>
 						<reference key="IBUIFontDescription" ref="527748216"/>
 						<reference key="IBUIFont" ref="385031777"/>
 					</object>
@@ -191,7 +190,6 @@
 						<string key="NSFrame">{{250, 403}, {50, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
