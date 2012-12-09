@@ -38,7 +38,7 @@
 		</dict>
 		<dict>
 			<key>Title</key>
-			<string>Option</string>
+			<string>Options</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

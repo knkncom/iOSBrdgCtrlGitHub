@@ -226,7 +226,7 @@
 //Wrapped and Unwrapped mode setting
 -(IBAction)Wrapped_Unwrapped_btn{
 	UIActionSheet *ValueSheet = [[UIActionSheet alloc]
-								 initWithTitle:@"Value Setting"
+								 initWithTitle:nil
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
 								 destructiveButtonTitle:nil
@@ -238,7 +238,7 @@
 //Positive and Negative mode setting
 -(IBAction)Positive_Negative_btn{
 	UIActionSheet *ValueSheet = [[UIActionSheet alloc]
-								 initWithTitle:@"Value Setting"
+								 initWithTitle:nil
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
 								 destructiveButtonTitle:nil
@@ -250,7 +250,7 @@
 //Circumferential and Azimuthal mode setting
 -(IBAction)Circumferential_Azimuthal_btn{
 	UIActionSheet *ValueSheet = [[UIActionSheet alloc]
-								 initWithTitle:@"Value Setting"
+								 initWithTitle:nil
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
 								 destructiveButtonTitle:nil
@@ -263,7 +263,7 @@
 //Continuous and One-Shot mode setting
 -(IBAction)Mode_btn{
 	UIActionSheet *ValueSheet = [[UIActionSheet alloc]
-								 initWithTitle:@"Value Setting"
+								 initWithTitle:nil
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
 								 destructiveButtonTitle:nil
@@ -276,7 +276,7 @@
 //Upright and Inverted mode setting
 -(IBAction)Upright_Inverted_btn{
 	UIActionSheet *ValueSheet = [[UIActionSheet alloc]
-								 initWithTitle:@"Value Setting"
+								 initWithTitle:nil
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
 								 destructiveButtonTitle:nil
@@ -289,7 +289,7 @@
 //Display lock flag setting
 -(IBAction)Lock_btn {
     UIActionSheet *ValueSheet = [[UIActionSheet alloc]
-								 initWithTitle:@"Lock Setting"
+								 initWithTitle:nil
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
 								 destructiveButtonTitle:@"Lock"
