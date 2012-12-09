@@ -37,8 +37,6 @@
 		E3771C2E158EBE9100449E0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3771C2D158EBE9100449E0A /* AVFoundation.framework */; };
 		E3771C2F158EBED200449E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		E3998C76158B1D87005CB8C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */; };
-		E3B459A8158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */; };
-		E3B459A9158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */; };
 		E3EF134E158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */; };
 		E3F2F32D167448D300DCB31C /* iPhoneRetina_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F2F32C167448D300DCB31C /* iPhoneRetina_Icon_121208.png */; };
 		E3F2F32F167448D600DCB31C /* iPhone_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F2F32E167448D600DCB31C /* iPhone_Icon_121208.png */; };
@@ -94,8 +92,6 @@
 		E31D946C1673375F00F64609 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E3771C2D158EBE9100449E0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad_Icon_icon_iosbrdg_led.png; sourceTree = "<group>"; };
-		E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadRetina_Icon_icon_iosbrdg_led.png; sourceTree = "<group>"; };
 		E3C34B21158ED80200B1B4D8 /* vision.edge-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "vision.edge-Info.plist"; sourceTree = "<group>"; };
 		E3EF134F158ED47C0005D52E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/Connect_iOSBridgeTestViewController.m; sourceTree = "<group>"; };
 		E3F2F32C167448D300DCB31C /* iPhoneRetina_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneRetina_Icon_121208.png; sourceTree = "<group>"; };
@@ -205,8 +201,6 @@
 				E31D946C1673375F00F64609 /* Default-568h@2x.png */,
 				E31D946A1673375B00F64609 /* Default@2x.png */,
 				E31D94681673375400F64609 /* Default.png */,
-				E3B459A3158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png */,
-				E3B459A4158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png */,
 				E3C34B21158ED80200B1B4D8 /* vision.edge-Info.plist */,
 				24D76662141E7C9A006389EC /* symbol_p06.png */,
 				2899E5210DE3E06400AC0155 /* Connect_iOSBridgeTestViewController.xib */,
@@ -290,8 +284,6 @@
 				24C6570113EFAA4C00B9C6CB /* tags in Resources */,
 				24D76663141E7C9A006389EC /* symbol_p06.png in Resources */,
 				2AA38E5D14E8B30C009A6396 /* Settings.bundle in Resources */,
-				E3B459A8158F2AFC00ACC1B3 /* iPad_Icon_icon_iosbrdg_led.png in Resources */,
-				E3B459A9158F2AFC00ACC1B3 /* iPadRetina_Icon_icon_iosbrdg_led.png in Resources */,
 				E31D94691673375400F64609 /* Default.png in Resources */,
 				E31D946B1673375B00F64609 /* Default@2x.png in Resources */,
 				E31D946D1673375F00F64609 /* Default-568h@2x.png in Resources */,
