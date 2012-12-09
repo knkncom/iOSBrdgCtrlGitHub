@@ -16,7 +16,7 @@
 			<key>Key</key>
 			<string>appVersion</string>
 			<key>Title</key>
-			<string>バージョン</string>
+			<string>Version</string>
 			<key>Type</key>
 			<string>PSTitleValueSpecifier</string>
 		</dict>
