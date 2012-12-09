@@ -1,5 +1,5 @@
 /*
-Copyright © 1996.  The Regents of the University of California (Regents).
+Copyright ï¿½ 1996.  The Regents of the University of California (Regents).
 All Rights Reserved.
 
 Written by Matt Wright, The Center for New Music and Audio Technologies,
@@ -122,7 +122,7 @@ int OSC_packetSize(OSCbuf *buf) {
 static void PatchMessageSize(OSCbuf *buf) {
     int4byte size;
     size = buf->bufptr - ((char *) buf->thisMsgSize) - 4;
-    *(buf->thisMsgSize) = htonl(size);
+//    *(buf->thisMsgSize) = htonl(size);
 }
 
 int OSC_openBundle(OSCbuf *buf, OSCTimeTag tt) {
