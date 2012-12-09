@@ -259,7 +259,7 @@
 								   initWithTitle:@"Channel Setting"
 								   delegate:self
 								   cancelButtonTitle:@"Cancel"
-								   destructiveButtonTitle:@"Select"
+								   destructiveButtonTitle:nil
 								   otherButtonTitles:@"CH0",@"CH1",@"CH2",@"CH3",@"CH4",@"CH5",nil];
 	ChannelSheet.tag = 1;
 	[ChannelSheet showInView:self.view];
@@ -273,7 +273,7 @@
 								 initWithTitle:@"Value Setting"
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
-								 destructiveButtonTitle:@"Select"
+								 destructiveButtonTitle:nil
 								 otherButtonTitles:@"Wrapped",@"Unwrapped",nil];
 	ValueSheet.tag = 2;
 	[ValueSheet showInView:self.view];
@@ -285,7 +285,7 @@
 								 initWithTitle:@"Value Setting"
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
-								 destructiveButtonTitle:@"Select"
+								 destructiveButtonTitle:nil
 								 otherButtonTitles:@"Positive",@"Negative",nil];
 	ValueSheet.tag = 3;
 	[ValueSheet showInView:self.view];
@@ -297,7 +297,7 @@
 								 initWithTitle:@"Value Setting"
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
-								 destructiveButtonTitle:@"Select"
+								 destructiveButtonTitle:nil
 								 otherButtonTitles:@"Both",@"Circumferential",@"Azimuthal",nil];
 	ValueSheet.tag = 4;
 	[ValueSheet showInView:self.view];
@@ -310,7 +310,7 @@
 								 initWithTitle:@"Value Setting"
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
-								 destructiveButtonTitle:@"Select"
+								 destructiveButtonTitle:nil
 								 otherButtonTitles:@"Continuous",@"One-Shot",nil];
 	ValueSheet.tag = 5;
 	[ValueSheet showInView:self.view];
@@ -323,80 +323,102 @@
 								 initWithTitle:@"Value Setting"
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
-								 destructiveButtonTitle:@"Select"
+								 destructiveButtonTitle:nil
 								 otherButtonTitles:@"Upright",@"Inverted",nil];
 	ValueSheet.tag = 6;
 	[ValueSheet showInView:self.view];
 	[ValueSheet release];
 }
 
+
+
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-	if (actionSheet.tag == 1) {
-		if (1 <= buttonIndex && buttonIndex <= 6) {
-			Ch = buttonIndex - 1;
-		}
-        [Channel_Set_btn_Title setTitle:[NSString stringWithFormat:@"CH%d",Ch] forState:UIControlStateNormal];
-    }
-    //Wrapped and Unwrapped flag setting
-    else if (actionSheet.tag == 2){
-        if (buttonIndex == 1) {
-            Rotation_Flag = 0;
-            [Wrapped_Unwrapped_btn_Title setTitle: @"Wrapped" forState:UIControlStateNormal];
-        }
-        else if (buttonIndex == 2){
-            Rotation_Flag = 1;
-            [Wrapped_Unwrapped_btn_Title setTitle: @"Unwrapped" forState:UIControlStateNormal];
-        }
-    }
-    //Positive and Negative flag setting
-    else if (actionSheet.tag == 3) {
-        if (buttonIndex == 1) {
-            Polarity = 1;
-            [Positive_Negative_btn_Title setTitle: @"Positive" forState:UIControlStateNormal];
-        }
-        else if (buttonIndex == 2){
-            Polarity = -1;
-            [Positive_Negative_btn_Title setTitle: @"Negative" forState:UIControlStateNormal];
-        }
-    }
-    //Circumferential and Azimuthal flag setting
-    else if (actionSheet.tag == 4) {
-        if (buttonIndex == 1){
-            KindOfValue_Flag = 1;
-            [Circumferential_Azimuthal_btn_Title setTitle: @"Both" forState:UIControlStateNormal];
-        }
-        else if (buttonIndex == 2){
-            KindOfValue_Flag = 2;
-            [Circumferential_Azimuthal_btn_Title setTitle: @"Circumferential" forState:UIControlStateNormal];
-        }
-        else if (buttonIndex == 3){
-            KindOfValue_Flag = 3;
-            [Circumferential_Azimuthal_btn_Title setTitle: @"Azimuthal" forState:UIControlStateNormal];
-        }
-    }
-    //Continuous and One-Shot flag setting
-    else if (actionSheet.tag == 5) {
-        if (buttonIndex == 1) {
-            Continuous_Flag = 1;
-            [Mode_btn_Title setTitle: @"Continuous" forState:UIControlStateNormal];
-        }
-        else if (buttonIndex == 2){
-            Continuous_Flag = 0;
-            [Mode_btn_Title setTitle: @"One-Shot" forState:UIControlStateNormal];
-        }
-    }
-    //Upright and Inverted flag setting
-    else if (actionSheet.tag == 6) {
-        if (buttonIndex == 1){
-            Reverse_state = 1;
-            [Upright_Inverted_btn_Title setTitle: @"Upright" forState:UIControlStateNormal];
-        }
-        else if (buttonIndex == 2){
-            Reverse_state = -1;
-            [Upright_Inverted_btn_Title setTitle: @"Inverted" forState:UIControlStateNormal];
-        }
+    switch (actionSheet.tag) {
+        case 1: // Channel setting
+            if (0 < buttonIndex && buttonIndex < 6) {
+                Ch = buttonIndex;
+            }
+            [Channel_Set_btn_Title setTitle:[NSString stringWithFormat:@"CH%d",Ch] forState:UIControlStateNormal];
+            break;
+        case 2: // Wrapped and Unwrapped flag setting
+            switch (buttonIndex) {
+                case 0:
+                    Rotation_Flag = 0;
+                    [Wrapped_Unwrapped_btn_Title setTitle: @"Wrapped" forState:UIControlStateNormal];
+                    break;
+                case 1:
+                    Rotation_Flag = 1;
+                    [Wrapped_Unwrapped_btn_Title setTitle: @"Unwrapped" forState:UIControlStateNormal];
+                    break;
+                default:
+                    break;
+            }
+            break;
+        case 3: // Positive and Negative flag setting
+            switch (buttonIndex) {
+                case 0:
+                    Polarity = 1;
+                    [Positive_Negative_btn_Title setTitle: @"Positive" forState:UIControlStateNormal];
+                    break;
+                case 1:
+                    Polarity = -1;
+                    [Positive_Negative_btn_Title setTitle: @"Negative" forState:UIControlStateNormal];
+                    break;
+                default:
+                    break;
+            }
+            break;
+        case 4: // Circumferential and Azimuthal flag setting
+            switch (buttonIndex) {
+                case 0:
+                    KindOfValue_Flag = 1;
+                    [Circumferential_Azimuthal_btn_Title setTitle: @"Both" forState:UIControlStateNormal];
+                    break;
+                case 1:
+                    KindOfValue_Flag = 2;
+                    [Circumferential_Azimuthal_btn_Title setTitle: @"Circumferential" forState:UIControlStateNormal];
+                    break;
+                case 2:
+                    KindOfValue_Flag = 3;
+                    [Circumferential_Azimuthal_btn_Title setTitle: @"Azimuthal" forState:UIControlStateNormal];
+                    break;
+                default:
+                    break;
+            }
+            break;
+        case 5: // Continuous and One-Shot flag setting
+            switch (buttonIndex) {
+                case 0:
+                    Continuous_Flag = 1;
+                    [Mode_btn_Title setTitle: @"Continuous" forState:UIControlStateNormal];
+                    break;
+                case 1:
+                    Continuous_Flag = 0;
+                    [Mode_btn_Title setTitle: @"One-Shot" forState:UIControlStateNormal];
+                    break;
+                default:
+                    break;
+            }
+            break;
+        case 6: // Upright and Inverted flag setting
+            switch (buttonIndex) {
+                case 0:
+                    Reverse_state = 1;
+                    [Upright_Inverted_btn_Title setTitle: @"Upright" forState:UIControlStateNormal];
+                    break;
+                case 1:
+                    Reverse_state = -1;
+                    [Upright_Inverted_btn_Title setTitle: @"Inverted" forState:UIControlStateNormal];
+                    break;
+                default:
+                    break;
+            }
+            break;
+        default:
+            break;
     }
 }
+
 -(IBAction)Threshold_Slider_Change{
 	Threshold_Value = (int)Threshold_Slider.value;
 	Threshold_Label.text = [NSString stringWithFormat:@"Th%d : Tr%0.1f",Threshold_Value, Transmission_Value];
@@ -424,7 +446,7 @@
 }
 
 //Display lock flag setting
--(IBAction)Rock_btn{
+-(IBAction)Lock_btn{
     [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
     Timer_Flag = 1;
 }
@@ -434,13 +456,13 @@
     if (Timer_Flag == 1) {
         Timer_V += 1;
         Threshold_Label.text = [NSString stringWithFormat:@"T: %d",30-Timer_V];
-        [Rock_btn_Title setTitle: [NSString stringWithFormat:@"T: %d",30-Timer_V] forState:UIControlStateNormal];
+        [Lock_btn_Title setTitle: [NSString stringWithFormat:@"T: %d",30-Timer_V] forState:UIControlStateNormal];
         
         if (Timer_V == 30) {
             Timer_Flag = 0;
             Timer_V = 0;
             [[UIApplication sharedApplication] endIgnoringInteractionEvents];
-            [Rock_btn_Title setTitle: @"Lock" forState:UIControlStateNormal];
+            [Lock_btn_Title setTitle: @"Lock" forState:UIControlStateNormal];
         }
     }
     else {
