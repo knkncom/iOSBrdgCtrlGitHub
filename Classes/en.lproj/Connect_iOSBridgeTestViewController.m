@@ -187,7 +187,6 @@ Exit:
     list = [[NSArray alloc] initWithArray:mlist];
     [mlist release];
     
-    NSLog(@"test");
     
     keyIndex = 0;
     // OpenAL End
