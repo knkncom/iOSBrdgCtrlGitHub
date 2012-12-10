@@ -33,18 +33,7 @@
 //Initialization of variables(flag, count, label name, timer method, and so on)
 -(void)viewDidLoad {
 	[super viewDidLoad];
-    
-    [[NSNotificationCenter defaultCenter]
-     addObserver:self
-     selector:@selector(getUserDefaults)
-     name:UIApplicationDidBecomeActiveNotification
-     object:nil];
-    
-    
-    NSUserDefaults *Default_Host = [NSUserDefaults standardUserDefaults];
-    host = [Default_Host stringForKey:@"HOST"];
-//    Host_TextField.text = host;
-    
+    [self getUserDefaults]; // 設定画面の値をアプリ側で読み込む
     
 	Continuous_Flag = 0;
 	Value_correction = 0;

@@ -40,6 +40,20 @@
 		E3EF134E158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */; };
 		E3F2F32D167448D300DCB31C /* iPhoneRetina_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F2F32C167448D300DCB31C /* iPhoneRetina_Icon_121208.png */; };
 		E3F2F32F167448D600DCB31C /* iPhone_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F2F32E167448D600DCB31C /* iPhone_Icon_121208.png */; };
+		E3F6836B1675AF1F009FA87F /* A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F6835E1675AF1F009FA87F /* A.m4a */; };
+		E3F6836C1675AF1F009FA87F /* A#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F6835F1675AF1F009FA87F /* A#.m4a */; };
+		E3F6836D1675AF1F009FA87F /* B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683601675AF1F009FA87F /* B.m4a */; };
+		E3F6836E1675AF1F009FA87F /* C#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683611675AF1F009FA87F /* C#.m4a */; };
+		E3F6836F1675AF1F009FA87F /* C4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683621675AF1F009FA87F /* C4.m4a */; };
+		E3F683701675AF1F009FA87F /* C5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683631675AF1F009FA87F /* C5.m4a */; };
+		E3F683711675AF1F009FA87F /* D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683641675AF1F009FA87F /* D.m4a */; };
+		E3F683721675AF1F009FA87F /* D#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683651675AF1F009FA87F /* D#.m4a */; };
+		E3F683731675AF1F009FA87F /* E.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683661675AF1F009FA87F /* E.m4a */; };
+		E3F683741675AF1F009FA87F /* F.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683671675AF1F009FA87F /* F.m4a */; };
+		E3F683751675AF1F009FA87F /* F#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683681675AF1F009FA87F /* F#.m4a */; };
+		E3F683761675AF1F009FA87F /* G.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F683691675AF1F009FA87F /* G.m4a */; };
+		E3F683771675AF1F009FA87F /* G#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3F6836A1675AF1F009FA87F /* G#.m4a */; };
+		E3F6837C1675B07A009FA87F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F6837B1675B07A009FA87F /* OpenAL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +110,20 @@
 		E3EF134F158ED47C0005D52E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/Connect_iOSBridgeTestViewController.m; sourceTree = "<group>"; };
 		E3F2F32C167448D300DCB31C /* iPhoneRetina_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneRetina_Icon_121208.png; sourceTree = "<group>"; };
 		E3F2F32E167448D600DCB31C /* iPhone_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Icon_121208.png; sourceTree = "<group>"; };
+		E3F6835E1675AF1F009FA87F /* A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = A.m4a; path = ../A.m4a; sourceTree = "<group>"; };
+		E3F6835F1675AF1F009FA87F /* A#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "A#.m4a"; path = "../A#.m4a"; sourceTree = "<group>"; };
+		E3F683601675AF1F009FA87F /* B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = B.m4a; path = ../B.m4a; sourceTree = "<group>"; };
+		E3F683611675AF1F009FA87F /* C#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "C#.m4a"; path = "../C#.m4a"; sourceTree = "<group>"; };
+		E3F683621675AF1F009FA87F /* C4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = C4.m4a; path = ../C4.m4a; sourceTree = "<group>"; };
+		E3F683631675AF1F009FA87F /* C5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = C5.m4a; path = ../C5.m4a; sourceTree = "<group>"; };
+		E3F683641675AF1F009FA87F /* D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = D.m4a; path = ../D.m4a; sourceTree = "<group>"; };
+		E3F683651675AF1F009FA87F /* D#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "D#.m4a"; path = "../D#.m4a"; sourceTree = "<group>"; };
+		E3F683661675AF1F009FA87F /* E.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = E.m4a; path = ../E.m4a; sourceTree = "<group>"; };
+		E3F683671675AF1F009FA87F /* F.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = F.m4a; path = ../F.m4a; sourceTree = "<group>"; };
+		E3F683681675AF1F009FA87F /* F#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "F#.m4a"; path = "../F#.m4a"; sourceTree = "<group>"; };
+		E3F683691675AF1F009FA87F /* G.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = G.m4a; path = ../G.m4a; sourceTree = "<group>"; };
+		E3F6836A1675AF1F009FA87F /* G#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "G#.m4a"; path = "../G#.m4a"; sourceTree = "<group>"; };
+		E3F6837B1675B07A009FA87F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F6837C1675B07A009FA87F /* OpenAL.framework in Frameworks */,
 				E3771C2F158EBED200449E0A /* Foundation.framework in Frameworks */,
 				E3771C2E158EBE9100449E0A /* AVFoundation.framework in Frameworks */,
 				E3998C76158B1D87005CB8C1 /* AudioToolbox.framework in Frameworks */,
@@ -118,8 +147,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				24C6570213EFAA5400B9C6CB /* OSCPort.h */,
-				24C6570313EFAA5F00B9C6CB /* OSCPort.m */,
+				E3F6837A1675AF76009FA87F /* OSCPort */,
 				24C656D713EFAA4C00B9C6CB /* OSC-Kit-Mac */,
 				1D3623240D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.h */,
 				1D3623250D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.m */,
@@ -177,6 +205,7 @@
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				E3F683791675AF36009FA87F /* sound */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -213,6 +242,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3F6837B1675B07A009FA87F /* OpenAL.framework */,
 				E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */,
 				E3771C2D158EBE9100449E0A /* AVFoundation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -221,6 +251,36 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3F683791675AF36009FA87F /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				E3F6835E1675AF1F009FA87F /* A.m4a */,
+				E3F6835F1675AF1F009FA87F /* A#.m4a */,
+				E3F683601675AF1F009FA87F /* B.m4a */,
+				E3F683611675AF1F009FA87F /* C#.m4a */,
+				E3F683621675AF1F009FA87F /* C4.m4a */,
+				E3F683631675AF1F009FA87F /* C5.m4a */,
+				E3F683641675AF1F009FA87F /* D.m4a */,
+				E3F683651675AF1F009FA87F /* D#.m4a */,
+				E3F683661675AF1F009FA87F /* E.m4a */,
+				E3F683671675AF1F009FA87F /* F.m4a */,
+				E3F683681675AF1F009FA87F /* F#.m4a */,
+				E3F683691675AF1F009FA87F /* G.m4a */,
+				E3F6836A1675AF1F009FA87F /* G#.m4a */,
+			);
+			name = sound;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E3F6837A1675AF76009FA87F /* OSCPort */ = {
+			isa = PBXGroup;
+			children = (
+				24C6570213EFAA5400B9C6CB /* OSCPort.h */,
+				24C6570313EFAA5F00B9C6CB /* OSCPort.m */,
+			);
+			name = OSCPort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +349,19 @@
 				E31D946D1673375F00F64609 /* Default-568h@2x.png in Resources */,
 				E3F2F32D167448D300DCB31C /* iPhoneRetina_Icon_121208.png in Resources */,
 				E3F2F32F167448D600DCB31C /* iPhone_Icon_121208.png in Resources */,
+				E3F6836B1675AF1F009FA87F /* A.m4a in Resources */,
+				E3F6836C1675AF1F009FA87F /* A#.m4a in Resources */,
+				E3F6836D1675AF1F009FA87F /* B.m4a in Resources */,
+				E3F6836E1675AF1F009FA87F /* C#.m4a in Resources */,
+				E3F6836F1675AF1F009FA87F /* C4.m4a in Resources */,
+				E3F683701675AF1F009FA87F /* C5.m4a in Resources */,
+				E3F683711675AF1F009FA87F /* D.m4a in Resources */,
+				E3F683721675AF1F009FA87F /* D#.m4a in Resources */,
+				E3F683731675AF1F009FA87F /* E.m4a in Resources */,
+				E3F683741675AF1F009FA87F /* F.m4a in Resources */,
+				E3F683751675AF1F009FA87F /* F#.m4a in Resources */,
+				E3F683761675AF1F009FA87F /* G.m4a in Resources */,
+				E3F683771675AF1F009FA87F /* G#.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
