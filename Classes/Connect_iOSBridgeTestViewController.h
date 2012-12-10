@@ -11,6 +11,9 @@
 #import<CoreLocation/CoreLocation.h>
 #import <AudioToolbox/AudioServices.h>
 #import <AVFoundation/AVFoundation.h>
+#import <OpenAL/al.h>
+#import <OpenAL/alc.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface Connect_iOSBridgeTestViewController : UIViewController <CLLocationManagerDelegate,UIActionSheetDelegate>{
 	
@@ -79,6 +82,12 @@
     BOOL toggleLED;
     BOOL toggleSound;
     BOOL toggleVibration;
+    
+    ALuint  _buffers[7];
+    ALuint  _sources[7];
+    
+    NSArray *list;
+    int keyIndex;
 }
 
 @property (nonatomic, retain) NSString *host;
@@ -116,6 +125,7 @@
 
 -(void)updateSettings;
 
+- (void)playSound;
 
 
 

@@ -15,25 +15,180 @@
 
 #define TIME_TO_WAIT 0.05
 
+void* GetOpenALAudioData(
+                         CFURLRef fileURL, ALsizei* dataSize, ALenum* dataFormat, ALsizei *sampleRate)
+{
+    OSStatus    err;
+    UInt32      size;
+    
+    // オーディオファイルを開く
+    ExtAudioFileRef audioFile;
+    err = ExtAudioFileOpenURL(fileURL, &audioFile);
+    if (err) {
+        goto Exit;
+    }
+    
+    // オーディオデータフォーマットを取得する
+    AudioStreamBasicDescription fileFormat;
+    size = sizeof(fileFormat);
+    err = ExtAudioFileGetProperty(
+                                  audioFile, kExtAudioFileProperty_FileDataFormat, &size, &fileFormat);
+    if (err) {
+        goto Exit;
+    }
+    
+    // アウトプットフォーマットを設定する
+    AudioStreamBasicDescription outputFormat;
+    outputFormat.mSampleRate = fileFormat.mSampleRate;
+    outputFormat.mChannelsPerFrame = fileFormat.mChannelsPerFrame;
+    outputFormat.mFormatID = kAudioFormatLinearPCM;
+    outputFormat.mBytesPerPacket = 2 * outputFormat.mChannelsPerFrame;
+    outputFormat.mFramesPerPacket = 1;
+    outputFormat.mBytesPerFrame = 2 * outputFormat.mChannelsPerFrame;
+    outputFormat.mBitsPerChannel = 16;
+    outputFormat.mFormatFlags = kAudioFormatFlagsNativeEndian | kAudioFormatFlagIsPacked | kAudioFormatFlagIsSignedInteger;
+    err = ExtAudioFileSetProperty(
+                                  audioFile, kExtAudioFileProperty_ClientDataFormat, sizeof(outputFormat), &outputFormat);
+    if (err) {
+        goto Exit;
+    }
+    
+    // フレーム数を取得する
+    SInt64  fileLengthFrames = 0;
+    size = sizeof(fileLengthFrames);
+    err = ExtAudioFileGetProperty(
+                                  audioFile, kExtAudioFileProperty_FileLengthFrames, &size, &fileLengthFrames);
+    if (err) {
+        goto Exit;
+    }
+    
+    // バッファを用意する
+    UInt32          bufferSize;
+    void*           data;
+    AudioBufferList dataBuffer;
+    bufferSize = fileLengthFrames * outputFormat.mBytesPerFrame;;
+    data = malloc(bufferSize);
+    dataBuffer.mNumberBuffers = 1;
+    dataBuffer.mBuffers[0].mDataByteSize = bufferSize;
+    dataBuffer.mBuffers[0].mNumberChannels = outputFormat.mChannelsPerFrame;
+    dataBuffer.mBuffers[0].mData = data;
+    
+    // バッファにデータを読み込む
+    err = ExtAudioFileRead(audioFile, (UInt32*)&fileLengthFrames, &dataBuffer);
+    if (err) {
+        free(data);
+        goto Exit;
+    }
+    
+    // 出力値を設定する
+    *dataSize = (ALsizei)bufferSize;
+    *dataFormat = (outputFormat.mChannelsPerFrame > 1) ? AL_FORMAT_STEREO16 : AL_FORMAT_MONO16;
+    *sampleRate = (ALsizei)outputFormat.mSampleRate;
+    
+Exit:
+    // オーディオファイルを破棄する
+    if (audioFile) {
+        ExtAudioFileDispose(audioFile);
+    }
+    
+    return data;
+}
+
+
+
 @implementation Connect_iOSBridgeTestViewController
 
 @synthesize host, sport;
 @synthesize AVSession;
 
--(void)getUserDefaults
-{
-    [NSUserDefaults resetStandardUserDefaults];
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    toggleSound = [defaults boolForKey: @"toggle_sound"];
-    toggleVibration = [defaults boolForKey: @"toggle_vibration"];
-    host = [defaults stringForKey: @"host_text"];
-}
 
 //Initialization of variables(flag, count, label name, timer method, and so on)
 -(void)viewDidLoad {
 	[super viewDidLoad];
     [self getUserDefaults]; // 設定画面の値をアプリ側で読み込む
+    
+    // OpenAL Start
+    
+    // OpneALデバイスを開く
+    ALCdevice*  device;
+    device = alcOpenDevice(NULL);
+    
+    // OpenALコンテキスを作成して、カレントにする
+    ALCcontext* alContext;
+    alContext = alcCreateContext(device, NULL);
+    alcMakeContextCurrent(alContext);
+    
+    // バッファとソースを作成する
+    alGenBuffers(7, _buffers);
+    alGenSources(7, _sources);
+    
+    int i;
+    for (i = 0; i < 13; i++) {
+        // サウンドファイルパスを取得する
+        NSString*   fileName = nil;
+        NSString*   path;
+        switch (i) {
+            case 0: fileName = @"C4"; break;
+            case 1: fileName = @"D"; break;
+            case 2: fileName = @"E"; break;
+            case 3: fileName = @"F"; break;
+            case 4: fileName = @"G"; break;
+            case 5: fileName = @"A"; break;
+            case 6: fileName = @"B"; break;
+        }
+        path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"m4a"];
+        
+        // オーディオデータを取得する
+        void*   audioData;
+        ALsizei dataSize;
+        ALenum  dataFormat;
+        ALsizei sampleRate;
+        audioData = GetOpenALAudioData(
+                                       (CFURLRef)[NSURL fileURLWithPath:path], &dataSize, &dataFormat, &sampleRate);
+        
+        // データをバッファに設定する
+        alBufferData(_buffers[i], dataFormat, audioData, dataSize, sampleRate);
+        
+        // バッファをソースに設定する
+        alSourcei(_sources[i], AL_BUFFER, _buffers[i]);
+    }
+    
+    // ②初期化
+    NSMutableArray *mlist = [[NSMutableArray alloc] init];
+    NSNumber *num;
+    num = [NSNumber numberWithInteger:0];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:0];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:4];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:4];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:5];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:5];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:4];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:3];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:3];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:2];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:2];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:1];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:1];
+    [mlist addObject:num];
+    num = [NSNumber numberWithInteger:0];
+    [mlist addObject:num];
+    list = [[NSArray alloc] initWithArray:mlist];
+    [mlist release];
+    
+    keyIndex = 0;
+    // OpenAL End
     
 	Continuous_Flag = 0;
 	Value_correction = 0;
@@ -116,18 +271,19 @@
         yaw *= Transmission_Value;
         New_yaw = yaw;
         
-        
         // Sound, Vibration, Camera flash
         if((int)yaw % 360 < 180) {
-            if (!triggered) {
-                // Camera LED flash
+            if(!triggered)
+            {
+                // LEDライト
                 if(toggleLED)
                     [self flashON];
                 [self flashOFF];
-                // Sound
+                // サウンド
                 if(toggleSound)
-                    AudioServicesPlaySystemSound(1013);
-                // Vibration
+                    // AudioServicesPlaySystemSound(1013);
+                     [self playSound];
+                // バイブレーション
                 if(toggleVibration)
                     AudioServicesPlaySystemSound(1011);
                 triggered = YES;
@@ -135,7 +291,7 @@
         }
         else
             triggered = NO;
-        
+
         
         if (Rotation_Flag == 0) {
             yaw = ((int)(New_heading + (360*0)) * Polarity) + Value_correction;
@@ -178,7 +334,6 @@
 		yaw = 0;
 		x = 0;
 		y = 0;
-//		latLabel.text = [NSString stringWithFormat:@" Yaw: %.0f X: %.0f Y: %.0f", yaw, x, y];
 	}
 }
 
@@ -431,6 +586,17 @@
     }
 }
 
+
+-(void)getUserDefaults
+{
+    [NSUserDefaults resetStandardUserDefaults];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    toggleSound = [defaults boolForKey: @"toggle_sound"];
+    toggleVibration = [defaults boolForKey: @"toggle_vibration"];
+    host = [defaults stringForKey: @"host_text"];
+}
+
 // Camera flash ON Function
 -(void)flashON
 {
@@ -461,6 +627,23 @@
     }
 }
 
+- (void)playSound {
+    // ドラムインデックスを取得する
+    //    int index;
+    //    index = [sender tag] - 100;
+    if (keyIndex >= [list count])
+        keyIndex = 0;
+    else {
+        id e = [list objectAtIndex: keyIndex];
+        NSLog(@"%@", e);
+        NSString *str = (NSString*)e;
+        int suuji = [str intValue];
+        alSourcePlay(_sources[suuji]);
+        keyIndex++;
+    }
+    // オーディオを再生する
+   // alSourcePlay(_sources[(int)aIndex]);
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -471,6 +654,11 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+    [lm release];
+    lm = nil;
+//    [list release];
+//    list = nil;
+    Run_Flag = 0;
 }
 - (void)dealloc {
     if (AVSession != nil)
