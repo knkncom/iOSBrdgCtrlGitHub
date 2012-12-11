@@ -11,8 +11,7 @@
 
 
 #import "Connect_iOSBridgeTestViewController.h"
-
-
+\
 #define TIME_TO_WAIT 0.05
 
 void* GetOpenALAudioData(
@@ -105,8 +104,10 @@ Exit:
 //Initialization of variables(flag, count, label name, timer method, and so on)
 -(void)viewDidLoad {
 	[super viewDidLoad];
-    [self getUserDefaults]; // 設定画面の値をアプリ側で読み込む
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidEnterBackground)
+                                                 name:@"applicationDidEnterBackground"
+                                               object:nil];    
     // OpenAL Start
     
     // OpneALデバイスを開く
@@ -239,17 +240,12 @@ Exit:
 
 // Update Host IP and Re-connect
 -(void)Host_Input {
-//    NSLog(Host_TextField.text);
+    [self getUserDefaults]; // 設定画面の値をアプリ側で読み込む
     if([host length] != 0) { // Do nothing if host IP is empty
-  //      host = Host_TextField.text;
         port_hostLabel.text = [NSString stringWithFormat:@" Host: %@",host];
         testip = [host UTF8String];
         // Init OSC sending port
         port = [[OSCPort oscPortToAddress:testip portNumber:sport] retain];
-        
-        NSUserDefaults *Default_Host = [NSUserDefaults standardUserDefaults];
-        [Default_Host setObject:Host_TextField.text forKey:@"HOST"];
-        [Default_Host synchronize];
     } else {
         port_hostLabel.text = [NSString stringWithFormat:@" Host: None"];
     }
@@ -257,7 +253,6 @@ Exit:
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)heading{
 	if (Run_Flag == 1) {
-        [self Host_Input]; // ホストに再接続
         compassImg.transform = CGAffineTransformMakeRotation(((-heading.magneticHeading - Value_correction)* M_PI/180)*Reverse_state);
 		New_heading = (int)heading.magneticHeading;
         
@@ -347,7 +342,7 @@ Exit:
 }
 
 
--(IBAction)Run_switch;{
+-(IBAction)switchChanged {
 	if (Run_switch.on == YES) {
 		Run_Flag = 1;
         [self Host_Input]; // ホストに再接続
@@ -356,6 +351,9 @@ Exit:
         latLabel.text = [NSString stringWithFormat:@" No Connection"];
 	}
 }
+
+
+
 //Channel name setting
 -(IBAction)Channel_Set_btn {
 	UIActionSheet *ChannelSheet = [[UIActionSheet alloc]
@@ -448,7 +446,7 @@ Exit:
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     switch (actionSheet.tag) {
         case 1: // Channel setting
-            if (0 < buttonIndex && buttonIndex < 6) {
+            if (0 <= buttonIndex && buttonIndex < 6) {
                 Ch = buttonIndex;
             }
             [Channel_Set_btn_Title setTitle:[NSString stringWithFormat:@"CH%d",Ch] forState:UIControlStateNormal];
@@ -591,11 +589,17 @@ Exit:
 -(void)getUserDefaults
 {
     [NSUserDefaults resetStandardUserDefaults];
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    toggleSound = [defaults boolForKey: @"toggle_sound"];
-    toggleVibration = [defaults boolForKey: @"toggle_vibration"];
-    host = [defaults stringForKey: @"host_text"];
+    toggleSound = [userDefaults boolForKey: @"toggle_sound"];
+    toggleVibration = [userDefaults boolForKey: @"toggle_vibration"];
+    host = [userDefaults stringForKey: @"host_str"];
+    
+    NSLog(@"host: %@\n",host);
+//    [defaults release];
+//    defaults = nil;
+    
 }
 
 // Camera flash ON Function
@@ -646,12 +650,23 @@ Exit:
    // alSourcePlay(_sources[(int)aIndex]);
 }
 
+- (void)applicationDidEnterBackground {
+    NSLog(@"applicationDidEnterBackground callled.");
+//    [self getUserDefaults]; // 設定画面の値をアプリ側で読み込む
+    Run_Flag = 0;
+    Run_switch.on = NO;
+    port_hostLabel.text = [NSString stringWithFormat:@" Host: None"];
+    latLabel.text = [NSString stringWithFormat:@" No Connection"];
+}
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
 	
 	// Release any cached data, images, etc that aren't in use.
 }
+
+
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
@@ -659,7 +674,6 @@ Exit:
     lm = nil;
 //    [list release];
 //    list = nil;
-    Run_Flag = 0;
 }
 - (void)dealloc {
     if (AVSession != nil)
