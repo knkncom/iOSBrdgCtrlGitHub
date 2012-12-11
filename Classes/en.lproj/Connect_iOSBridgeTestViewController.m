@@ -108,7 +108,17 @@ Exit:
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(applicationDidEnterBackground)
                                                  name:@"applicationDidEnterBackground"
-                                               object:nil];    
+                                               object:nil];
+    
+    // Lockボタンのカスタマイズ
+    [[Lock_btn_Title layer] setCornerRadius:8.0f];
+    [[Lock_btn_Title layer] setMasksToBounds:YES];
+    [[Lock_btn_Title layer] setBorderWidth:1.0f];
+    [[Lock_btn_Title layer] setBorderColor:[[UIColor colorWithWhite:0.7 alpha:1.0] CGColor]];
+    [Lock_btn_Title setBackgroundColor:[UIColor whiteColor]];
+    [[Lock_btn_Title titleLabel] setFont:[UIFont boldSystemFontOfSize:15.0f]];
+
+    
     // OpenAL Start
     
     // OpneALデバイスを開く
@@ -437,7 +447,7 @@ Exit:
 								 initWithTitle:nil
 								 delegate:self
 								 cancelButtonTitle:@"Cancel"
-								 destructiveButtonTitle:@"Lock"
+								 destructiveButtonTitle:@"Lock Screen for 30 sec"
 								 otherButtonTitles:nil];
 	ValueSheet.tag = 7;
 	[ValueSheet showInView:self.view];
@@ -568,10 +578,14 @@ Exit:
 
 
 //Timer function
--(void)Spin_Timer:(NSTimer *)timer{
+-(void)Spin_Timer:(NSTimer *)timer {
     if (Timer_Flag == 1) {
+        
+        // change button color
+        [Lock_btn_Title setBackgroundColor:[UIColor orangeColor]];
+        [[Lock_btn_Title titleLabel] setFont:[UIFont boldSystemFontOfSize:17.0f]];
+
         Timer_V += 1;
-        Threshold_Label.text = [NSString stringWithFormat:@"T: %d",30-Timer_V];
         [Lock_btn_Title setTitle: [NSString stringWithFormat:@"T: %d",30-Timer_V] forState:UIControlStateNormal];
         
         if (Timer_V == 30) {
@@ -579,6 +593,10 @@ Exit:
             Timer_V = 0;
             [[UIApplication sharedApplication] endIgnoringInteractionEvents];
             [Lock_btn_Title setTitle: @"Lock" forState:UIControlStateNormal];
+
+            // change button color
+            [Lock_btn_Title setBackgroundColor:[UIColor whiteColor]];
+            [[Lock_btn_Title titleLabel] setFont:[UIFont boldSystemFontOfSize:15.0f]];
         }
     }
     else {
@@ -597,10 +615,7 @@ Exit:
     toggleVibration = [userDefaults boolForKey: @"toggle_vibration"];
     host = [userDefaults stringForKey: @"host_str"];
     
-    NSLog(@"host: %@\n",host);
-//    [defaults release];
-//    defaults = nil;
-    
+    NSLog(@"host: %@\n",host);    
 }
 
 // Camera flash ON Function
