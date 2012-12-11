@@ -11,7 +11,6 @@
 
 
 #import "Connect_iOSBridgeTestViewController.h"
-\
 #define TIME_TO_WAIT 0.05
 
 void* GetOpenALAudioData(
@@ -101,6 +100,36 @@ Exit:
 @synthesize host, sport;
 @synthesize AVSession;
 
+
+// Camera flash ON Function
+-(void)flashON
+{
+    AVCaptureDevice *flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if([flashLight isTorchAvailable] && [flashLight isTorchModeSupported:AVCaptureTorchModeOn])
+    {
+        BOOL success = [flashLight lockForConfiguration:nil];
+        if(success)
+        {
+            [flashLight setTorchMode:AVCaptureTorchModeOn];
+            [flashLight unlockForConfiguration];
+        }
+    }
+}
+
+// Camera flash OFF Function
+-(void)flashOFF
+{
+    AVCaptureDevice *flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if([flashLight isTorchAvailable] && [flashLight isTorchModeSupported:AVCaptureTorchModeOn])
+    {
+        BOOL success = [flashLight lockForConfiguration:nil];
+        if(success)
+        {
+            [flashLight setTorchMode:AVCaptureTorchModeOff];
+            [flashLight unlockForConfiguration];
+        }
+    }
+}
 
 //Initialization of variables(flag, count, label name, timer method, and so on)
 -(void)viewDidLoad {
@@ -252,6 +281,7 @@ Exit:
 // Update Host IP and Re-connect
 -(void)Host_Input {
     [self getUserDefaults]; // 設定画面の値をアプリ側で読み込む
+    
     if([host length] != 0) { // Do nothing if host IP is empty
         port_hostLabel.text = [NSString stringWithFormat:@" Host: %@",host];
         testip = [host UTF8String];
@@ -610,43 +640,14 @@ Exit:
     [NSUserDefaults resetStandardUserDefaults];
 
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    
+    host = [userDefaults stringForKey: @"host_str"];
+    toggleLED = [userDefaults boolForKey: @"toggle_led"];
     toggleSound = [userDefaults boolForKey: @"toggle_sound"];
     toggleVibration = [userDefaults boolForKey: @"toggle_vibration"];
-    host = [userDefaults stringForKey: @"host_str"];
     
     NSLog(@"host: %@\n",host);    
 }
 
-// Camera flash ON Function
--(void)flashON
-{
-    AVCaptureDevice *flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    if([flashLight isTorchAvailable] && [flashLight isTorchModeSupported:AVCaptureTorchModeOn])
-    {
-        BOOL success = [flashLight lockForConfiguration:nil];
-        if(success)
-        {
-            [flashLight setTorchMode:AVCaptureTorchModeOn];
-            [flashLight unlockForConfiguration];
-        }
-    }
-}
-
-// Camera flash OFF Function
--(void)flashOFF
-{
-    AVCaptureDevice *flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    if([flashLight isTorchAvailable] && [flashLight isTorchModeSupported:AVCaptureTorchModeOn])
-    {
-        BOOL success = [flashLight lockForConfiguration:nil];
-        if(success)
-        {
-            [flashLight setTorchMode:AVCaptureTorchModeOff];
-            [flashLight unlockForConfiguration];
-        }
-    }
-}
 
 - (void)playSound {
     // ドラムインデックスを取得する
