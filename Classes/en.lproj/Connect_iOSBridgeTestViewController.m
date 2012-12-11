@@ -654,14 +654,14 @@ Exit:
     //    index = [sender tag] - 100;
     if (keyIndex >= [list count])
         keyIndex = 0;
-    else {
-        id e = [list objectAtIndex: keyIndex];
-        NSLog(@"%@", e);
-        NSString *str = (NSString*)e;
-        int suuji = [str intValue];
-        alSourcePlay(_sources[suuji]);
-        keyIndex++;
-    }
+    id e = [list objectAtIndex: keyIndex];
+    NSLog(@"%d", [list count]);
+    NSString *str = (NSString*)e;
+    int suuji = [str intValue];
+    alSourcePlay(_sources[suuji]);
+    [str release];
+    str = nil;
+    keyIndex++;
     // オーディオを再生する
    // alSourcePlay(_sources[(int)aIndex]);
 }
