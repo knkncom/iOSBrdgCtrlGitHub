@@ -106,7 +106,7 @@
 -(IBAction)Circumferential_Azimuthal_btn;
 
 
--(IBAction)Run_switch;
+-(IBAction)switchChanged;
 
 -(IBAction)Channel_Set_btn;
 -(IBAction)one_shot_btn;

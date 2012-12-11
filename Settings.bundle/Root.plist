@@ -28,7 +28,7 @@
 		</dict>
 		<dict>
 			<key>Key</key>
-			<string>host_text</string>
+			<string>host_str</string>
 			<key>KeyboardType</key>
 			<string>NumbersAndPunctuation</string>
 			<key>Title</key>
