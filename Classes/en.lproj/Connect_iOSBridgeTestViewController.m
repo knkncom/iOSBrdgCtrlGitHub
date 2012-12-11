@@ -18,8 +18,6 @@ void* GetOpenALAudioData(
                          CFURLRef fileURL, ALsizei* dataSize, ALenum* dataFormat, ALsizei *sampleRate)
 {
     
-    NSLog(@"test");
-    
     OSStatus    err;
     UInt32      size;
     
