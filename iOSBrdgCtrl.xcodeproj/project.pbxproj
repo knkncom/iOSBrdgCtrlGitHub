@@ -60,7 +60,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connect_iOSBridgeTestAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connect_iOSBridgeTestAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* iOSBrdg.vision.edge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBrdg.vision.edge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* iOSBrdgCtrl.vision.edge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBrdgCtrl.vision.edge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		24C656D813EFAA4C00B9C6CB /* copyright */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright; sourceTree = "<group>"; };
 		24C656D913EFAA4C00B9C6CB /* NetworkReturnAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NetworkReturnAddress.c; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* iOSBrdg.vision.edge.app */,
+				1D6058910D05DD3D006BFB54 /* iOSBrdgCtrl.vision.edge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,9 +286,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* iOSBrdg */ = {
+		1D6058900D05DD3D006BFB54 /* iOSBrdgCtrl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iOSBrdg" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iOSBrdgCtrl" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -299,9 +299,9 @@
 			);
 			dependencies = (
 			);
-			name = iOSBrdg;
+			name = iOSBrdgCtrl;
 			productName = Connect_iOSBridgeTest;
-			productReference = 1D6058910D05DD3D006BFB54 /* iOSBrdg.vision.edge.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* iOSBrdgCtrl.vision.edge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -312,7 +312,7 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOSBrdg" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOSBrdgCtrl" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -327,7 +327,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* iOSBrdg */,
+				1D6058900D05DD3D006BFB54 /* iOSBrdgCtrl */,
 			);
 		};
 /* End PBXProject section */
@@ -433,7 +433,7 @@
 				GCC_PREFIX_HEADER = vision.edge_Prefix.pch;
 				INFOPLIST_FILE = "vision.edge-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = iOSBrdg.vision.edge;
+				PRODUCT_NAME = iOSBrdgCtrl.vision.edge;
 				PROVISIONING_PROFILE = "D19F8F1C-BC5A-49D9-9E97-B170A412D26A";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -451,7 +451,7 @@
 				GCC_PREFIX_HEADER = vision.edge_Prefix.pch;
 				INFOPLIST_FILE = "vision.edge-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = iOSBrdg.vision.edge;
+				PRODUCT_NAME = iOSBrdgCtrl.vision.edge;
 				PROVISIONING_PROFILE = "D19F8F1C-BC5A-49D9-9E97-B170A412D26A";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -490,7 +490,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iOSBrdg" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iOSBrdgCtrl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -499,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOSBrdg" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOSBrdgCtrl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

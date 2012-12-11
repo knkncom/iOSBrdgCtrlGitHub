@@ -7,7 +7,7 @@
 //
 
 
-//ver1
+//ver2
 
 
 #import "Connect_iOSBridgeTestViewController.h"
