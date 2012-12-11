@@ -24,34 +24,34 @@
 		24C656FF13EFAA4C00B9C6CB /* OSC-timetag.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C656F013EFAA4C00B9C6CB /* OSC-timetag.c */; };
 		24C6570013EFAA4C00B9C6CB /* README in Resources */ = {isa = PBXBuildFile; fileRef = 24C656F213EFAA4C00B9C6CB /* README */; };
 		24C6570113EFAA4C00B9C6CB /* tags in Resources */ = {isa = PBXBuildFile; fileRef = 24C656F313EFAA4C00B9C6CB /* tags */; };
-		24C6570413EFAA5F00B9C6CB /* OSCPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C6570313EFAA5F00B9C6CB /* OSCPort.m */; };
 		24D7664B141E765F006389EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D7664A141E765F006389EC /* CoreLocation.framework */; };
 		24D76663141E7C9A006389EC /* symbol_p06.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D76662141E7C9A006389EC /* symbol_p06.png */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2899E5220DE3E06400AC0155 /* Connect_iOSBridgeTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* Connect_iOSBridgeTestViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		2AA38E5D14E8B30C009A6396 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AA38E5C14E8B30C009A6396 /* Settings.bundle */; };
-		E312A1951675E4C1002BAA20 /* A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A1881675E4C1002BAA20 /* A.m4a */; };
-		E312A1961675E4C1002BAA20 /* A#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A1891675E4C1002BAA20 /* A#.m4a */; };
-		E312A1971675E4C1002BAA20 /* B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A18A1675E4C1002BAA20 /* B.m4a */; };
-		E312A1981675E4C1002BAA20 /* C#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A18B1675E4C1002BAA20 /* C#.m4a */; };
-		E312A1991675E4C1002BAA20 /* C4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A18C1675E4C1002BAA20 /* C4.m4a */; };
-		E312A19A1675E4C1002BAA20 /* C5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A18D1675E4C1002BAA20 /* C5.m4a */; };
-		E312A19B1675E4C1002BAA20 /* D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A18E1675E4C1002BAA20 /* D.m4a */; };
-		E312A19C1675E4C1002BAA20 /* D#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A18F1675E4C1002BAA20 /* D#.m4a */; };
-		E312A19D1675E4C1002BAA20 /* E.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A1901675E4C1002BAA20 /* E.m4a */; };
-		E312A19E1675E4C1002BAA20 /* F.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A1911675E4C1002BAA20 /* F.m4a */; };
-		E312A19F1675E4C1002BAA20 /* F#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A1921675E4C1002BAA20 /* F#.m4a */; };
-		E312A1A01675E4C1002BAA20 /* G.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A1931675E4C1002BAA20 /* G.m4a */; };
-		E312A1A11675E4C1002BAA20 /* G#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E312A1941675E4C1002BAA20 /* G#.m4a */; };
 		E31D94691673375400F64609 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D94681673375400F64609 /* Default.png */; };
 		E31D946B1673375B00F64609 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D946A1673375B00F64609 /* Default@2x.png */; };
 		E31D946D1673375F00F64609 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E31D946C1673375F00F64609 /* Default-568h@2x.png */; };
 		E36F207D16776C2F00FEBA19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36F207C16776C2F00FEBA19 /* QuartzCore.framework */; };
+		E3744549167799A3008EBF74 /* Connect_iOSBridgeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3744548167799A3008EBF74 /* Connect_iOSBridgeTestViewController.m */; };
+		E3744558167799BB008EBF74 /* A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E374454B167799BB008EBF74 /* A.m4a */; };
+		E3744559167799BB008EBF74 /* A#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E374454C167799BB008EBF74 /* A#.m4a */; };
+		E374455A167799BB008EBF74 /* B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E374454D167799BB008EBF74 /* B.m4a */; };
+		E374455B167799BB008EBF74 /* C#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E374454E167799BB008EBF74 /* C#.m4a */; };
+		E374455C167799BB008EBF74 /* C4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E374454F167799BB008EBF74 /* C4.m4a */; };
+		E374455D167799BB008EBF74 /* C5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3744550167799BB008EBF74 /* C5.m4a */; };
+		E374455E167799BB008EBF74 /* D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3744551167799BB008EBF74 /* D.m4a */; };
+		E374455F167799BB008EBF74 /* D#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3744552167799BB008EBF74 /* D#.m4a */; };
+		E3744560167799BB008EBF74 /* E.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3744553167799BB008EBF74 /* E.m4a */; };
+		E3744561167799BB008EBF74 /* F.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3744554167799BB008EBF74 /* F.m4a */; };
+		E3744562167799BB008EBF74 /* F#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3744555167799BB008EBF74 /* F#.m4a */; };
+		E3744563167799BB008EBF74 /* G.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3744556167799BB008EBF74 /* G.m4a */; };
+		E3744564167799BB008EBF74 /* G#.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E3744557167799BB008EBF74 /* G#.m4a */; };
+		E3744567167799D0008EBF74 /* OSCPort.m in Sources */ = {isa = PBXBuildFile; fileRef = E3744566167799D0008EBF74 /* OSCPort.m */; };
 		E3771C2E158EBE9100449E0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3771C2D158EBE9100449E0A /* AVFoundation.framework */; };
 		E3771C2F158EBED200449E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		E3998C76158B1D87005CB8C1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */; };
-		E3EF134E158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */; };
 		E3F2F32D167448D300DCB31C /* iPhoneRetina_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F2F32C167448D300DCB31C /* iPhoneRetina_Icon_121208.png */; };
 		E3F2F32F167448D600DCB31C /* iPhone_Icon_121208.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F2F32E167448D600DCB31C /* iPhone_Icon_121208.png */; };
 		E3F6837C1675B07A009FA87F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F6837B1675B07A009FA87F /* OpenAL.framework */; };
@@ -91,8 +91,6 @@
 		24C656F113EFAA4C00B9C6CB /* OSC-timetag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSC-timetag.h"; sourceTree = "<group>"; };
 		24C656F213EFAA4C00B9C6CB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		24C656F313EFAA4C00B9C6CB /* tags */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tags; sourceTree = "<group>"; };
-		24C6570213EFAA5400B9C6CB /* OSCPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCPort.h; sourceTree = "<group>"; };
-		24C6570313EFAA5F00B9C6CB /* OSCPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCPort.m; sourceTree = "<group>"; };
 		24D7664A141E765F006389EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		24D76662141E7C9A006389EC /* symbol_p06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol_p06.png; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -102,27 +100,29 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AA38E5C14E8B30C009A6396 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* vision.edge_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vision.edge_Prefix.pch; sourceTree = "<group>"; };
-		E312A1881675E4C1002BAA20 /* A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = A.m4a; sourceTree = "<group>"; };
-		E312A1891675E4C1002BAA20 /* A#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A#.m4a"; sourceTree = "<group>"; };
-		E312A18A1675E4C1002BAA20 /* B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = B.m4a; sourceTree = "<group>"; };
-		E312A18B1675E4C1002BAA20 /* C#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "C#.m4a"; sourceTree = "<group>"; };
-		E312A18C1675E4C1002BAA20 /* C4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = C4.m4a; sourceTree = "<group>"; };
-		E312A18D1675E4C1002BAA20 /* C5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = C5.m4a; sourceTree = "<group>"; };
-		E312A18E1675E4C1002BAA20 /* D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = D.m4a; sourceTree = "<group>"; };
-		E312A18F1675E4C1002BAA20 /* D#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "D#.m4a"; sourceTree = "<group>"; };
-		E312A1901675E4C1002BAA20 /* E.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = E.m4a; sourceTree = "<group>"; };
-		E312A1911675E4C1002BAA20 /* F.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = F.m4a; sourceTree = "<group>"; };
-		E312A1921675E4C1002BAA20 /* F#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "F#.m4a"; sourceTree = "<group>"; };
-		E312A1931675E4C1002BAA20 /* G.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = G.m4a; sourceTree = "<group>"; };
-		E312A1941675E4C1002BAA20 /* G#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "G#.m4a"; sourceTree = "<group>"; };
 		E31D94681673375400F64609 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E31D946A1673375B00F64609 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E31D946C1673375F00F64609 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E36F207C16776C2F00FEBA19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E3744548167799A3008EBF74 /* Connect_iOSBridgeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connect_iOSBridgeTestViewController.m; sourceTree = "<group>"; };
+		E374454B167799BB008EBF74 /* A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = A.m4a; path = sounds/A.m4a; sourceTree = "<group>"; };
+		E374454C167799BB008EBF74 /* A#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "A#.m4a"; path = "sounds/A#.m4a"; sourceTree = "<group>"; };
+		E374454D167799BB008EBF74 /* B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = B.m4a; path = sounds/B.m4a; sourceTree = "<group>"; };
+		E374454E167799BB008EBF74 /* C#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "C#.m4a"; path = "sounds/C#.m4a"; sourceTree = "<group>"; };
+		E374454F167799BB008EBF74 /* C4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = C4.m4a; path = sounds/C4.m4a; sourceTree = "<group>"; };
+		E3744550167799BB008EBF74 /* C5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = C5.m4a; path = sounds/C5.m4a; sourceTree = "<group>"; };
+		E3744551167799BB008EBF74 /* D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = D.m4a; path = sounds/D.m4a; sourceTree = "<group>"; };
+		E3744552167799BB008EBF74 /* D#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "D#.m4a"; path = "sounds/D#.m4a"; sourceTree = "<group>"; };
+		E3744553167799BB008EBF74 /* E.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = E.m4a; path = sounds/E.m4a; sourceTree = "<group>"; };
+		E3744554167799BB008EBF74 /* F.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = F.m4a; path = sounds/F.m4a; sourceTree = "<group>"; };
+		E3744555167799BB008EBF74 /* F#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "F#.m4a"; path = "sounds/F#.m4a"; sourceTree = "<group>"; };
+		E3744556167799BB008EBF74 /* G.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = G.m4a; path = sounds/G.m4a; sourceTree = "<group>"; };
+		E3744557167799BB008EBF74 /* G#.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "G#.m4a"; path = "sounds/G#.m4a"; sourceTree = "<group>"; };
+		E3744565167799D0008EBF74 /* OSCPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSCPort.h; path = OSCPort/OSCPort.h; sourceTree = "<group>"; };
+		E3744566167799D0008EBF74 /* OSCPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSCPort.m; path = OSCPort/OSCPort.m; sourceTree = "<group>"; };
 		E3771C2D158EBE9100449E0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E3998C75158B1D87005CB8C1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E3C34B21158ED80200B1B4D8 /* vision.edge-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "vision.edge-Info.plist"; sourceTree = "<group>"; };
-		E3EF134F158ED47C0005D52E /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = en; path = en.lproj/Connect_iOSBridgeTestViewController.m; sourceTree = "<group>"; };
 		E3F2F32C167448D300DCB31C /* iPhoneRetina_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneRetina_Icon_121208.png; sourceTree = "<group>"; };
 		E3F2F32E167448D600DCB31C /* iPhone_Icon_121208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Icon_121208.png; sourceTree = "<group>"; };
 		E3F6837B1675B07A009FA87F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -155,7 +155,7 @@
 				1D3623240D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.h */,
 				1D3623250D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* Connect_iOSBridgeTestViewController.h */,
-				E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */,
+				E3744548167799A3008EBF74 /* Connect_iOSBridgeTestViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -260,19 +260,19 @@
 		E3F683791675AF36009FA87F /* sound */ = {
 			isa = PBXGroup;
 			children = (
-				E312A1881675E4C1002BAA20 /* A.m4a */,
-				E312A1891675E4C1002BAA20 /* A#.m4a */,
-				E312A18A1675E4C1002BAA20 /* B.m4a */,
-				E312A18B1675E4C1002BAA20 /* C#.m4a */,
-				E312A18C1675E4C1002BAA20 /* C4.m4a */,
-				E312A18D1675E4C1002BAA20 /* C5.m4a */,
-				E312A18E1675E4C1002BAA20 /* D.m4a */,
-				E312A18F1675E4C1002BAA20 /* D#.m4a */,
-				E312A1901675E4C1002BAA20 /* E.m4a */,
-				E312A1911675E4C1002BAA20 /* F.m4a */,
-				E312A1921675E4C1002BAA20 /* F#.m4a */,
-				E312A1931675E4C1002BAA20 /* G.m4a */,
-				E312A1941675E4C1002BAA20 /* G#.m4a */,
+				E374454B167799BB008EBF74 /* A.m4a */,
+				E374454C167799BB008EBF74 /* A#.m4a */,
+				E374454D167799BB008EBF74 /* B.m4a */,
+				E374454E167799BB008EBF74 /* C#.m4a */,
+				E374454F167799BB008EBF74 /* C4.m4a */,
+				E3744550167799BB008EBF74 /* C5.m4a */,
+				E3744551167799BB008EBF74 /* D.m4a */,
+				E3744552167799BB008EBF74 /* D#.m4a */,
+				E3744553167799BB008EBF74 /* E.m4a */,
+				E3744554167799BB008EBF74 /* F.m4a */,
+				E3744555167799BB008EBF74 /* F#.m4a */,
+				E3744556167799BB008EBF74 /* G.m4a */,
+				E3744557167799BB008EBF74 /* G#.m4a */,
 			);
 			name = sound;
 			path = Classes;
@@ -281,8 +281,8 @@
 		E3F6837A1675AF76009FA87F /* OSCPort */ = {
 			isa = PBXGroup;
 			children = (
-				24C6570213EFAA5400B9C6CB /* OSCPort.h */,
-				24C6570313EFAA5F00B9C6CB /* OSCPort.m */,
+				E3744565167799D0008EBF74 /* OSCPort.h */,
+				E3744566167799D0008EBF74 /* OSCPort.m */,
 			);
 			name = OSCPort;
 			sourceTree = "<group>";
@@ -353,19 +353,19 @@
 				E31D946D1673375F00F64609 /* Default-568h@2x.png in Resources */,
 				E3F2F32D167448D300DCB31C /* iPhoneRetina_Icon_121208.png in Resources */,
 				E3F2F32F167448D600DCB31C /* iPhone_Icon_121208.png in Resources */,
-				E312A1951675E4C1002BAA20 /* A.m4a in Resources */,
-				E312A1961675E4C1002BAA20 /* A#.m4a in Resources */,
-				E312A1971675E4C1002BAA20 /* B.m4a in Resources */,
-				E312A1981675E4C1002BAA20 /* C#.m4a in Resources */,
-				E312A1991675E4C1002BAA20 /* C4.m4a in Resources */,
-				E312A19A1675E4C1002BAA20 /* C5.m4a in Resources */,
-				E312A19B1675E4C1002BAA20 /* D.m4a in Resources */,
-				E312A19C1675E4C1002BAA20 /* D#.m4a in Resources */,
-				E312A19D1675E4C1002BAA20 /* E.m4a in Resources */,
-				E312A19E1675E4C1002BAA20 /* F.m4a in Resources */,
-				E312A19F1675E4C1002BAA20 /* F#.m4a in Resources */,
-				E312A1A01675E4C1002BAA20 /* G.m4a in Resources */,
-				E312A1A11675E4C1002BAA20 /* G#.m4a in Resources */,
+				E3744558167799BB008EBF74 /* A.m4a in Resources */,
+				E3744559167799BB008EBF74 /* A#.m4a in Resources */,
+				E374455A167799BB008EBF74 /* B.m4a in Resources */,
+				E374455B167799BB008EBF74 /* C#.m4a in Resources */,
+				E374455C167799BB008EBF74 /* C4.m4a in Resources */,
+				E374455D167799BB008EBF74 /* C5.m4a in Resources */,
+				E374455E167799BB008EBF74 /* D.m4a in Resources */,
+				E374455F167799BB008EBF74 /* D#.m4a in Resources */,
+				E3744560167799BB008EBF74 /* E.m4a in Resources */,
+				E3744561167799BB008EBF74 /* F.m4a in Resources */,
+				E3744562167799BB008EBF74 /* F#.m4a in Resources */,
+				E3744563167799BB008EBF74 /* G.m4a in Resources */,
+				E3744564167799BB008EBF74 /* G#.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +394,6 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* Connect_iOSBridgeTestAppDelegate.m in Sources */,
-				E3EF134E158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m in Sources */,
 				24C656F513EFAA4C00B9C6CB /* NetworkReturnAddress.c in Sources */,
 				24C656F613EFAA4C00B9C6CB /* OSC-address-space.c in Sources */,
 				24C656F713EFAA4C00B9C6CB /* OSC-callbacklist.c in Sources */,
@@ -406,22 +405,12 @@
 				24C656FD13EFAA4C00B9C6CB /* OSC-string-help.c in Sources */,
 				24C656FE13EFAA4C00B9C6CB /* OSC-system-dependent.c in Sources */,
 				24C656FF13EFAA4C00B9C6CB /* OSC-timetag.c in Sources */,
-				24C6570413EFAA5F00B9C6CB /* OSCPort.m in Sources */,
+				E3744549167799A3008EBF74 /* Connect_iOSBridgeTestViewController.m in Sources */,
+				E3744567167799D0008EBF74 /* OSCPort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E3EF1350158ED47C0005D52E /* Connect_iOSBridgeTestViewController.m */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3EF134F158ED47C0005D52E /* en */,
-			);
-			name = Connect_iOSBridgeTestViewController.m;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
